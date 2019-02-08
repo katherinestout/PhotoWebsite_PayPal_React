@@ -7,7 +7,7 @@ class PayPalButton extends React.Component {
     super(props);
 
     this.state = {
-       // paypal: null,
+    
       showButton: false,
     };
     window.React= React;
