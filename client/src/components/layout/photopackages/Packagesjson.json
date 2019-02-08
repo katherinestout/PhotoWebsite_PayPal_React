@@ -1,0 +1,39 @@
+[
+    {"title": "downpayment",
+        "id": 1,
+        "price": 50,
+        "image": "images/one.JPG"
+
+
+    },
+    {
+        "title": "portrait",
+        "id": 2,
+        "price": 250,
+        "image": "images/one.JPG"
+    },
+    {
+        "title": "wedding",
+        "id": 3,
+        "price": 2000,
+        "image": "images/one.JPG"
+    },
+    {
+        "title": "elopement",
+        "id": 4,
+        "price": 350,
+        "image": "images/one.JPG"
+    },
+    {
+        "title": "couples",
+        "id": 5,
+        "price": 350,
+        "image": "images/one.JPG"
+    },
+    {
+        "title": "custom",
+        "id": 6,
+        "price": "undecided",
+        "image": "images/one.JPG"
+    }
+]
