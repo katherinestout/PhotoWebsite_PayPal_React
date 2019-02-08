@@ -24,13 +24,15 @@ class Packages extends Component {
         <Wrapper>
         {this.state.Packagesjson.map(Packagesjson => (
           <PackageCard
-          title key = {Packagesjson.title}
-          id  = {Packagesjson.id}
+          title = {Packagesjson.title}
+          id key = {Packagesjson.id}
           price = {Packagesjson.price}
           handleClick = {this.handleClick} 
           image = {Packagesjson.image}
+          des = {Packagesjson.des}
           />
         ))}
+        
         </Wrapper>
       </div>
       </div>

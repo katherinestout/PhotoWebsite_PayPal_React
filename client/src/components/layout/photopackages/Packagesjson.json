@@ -2,6 +2,7 @@
     {"title": "downpayment",
         "id": 1,
         "price": 50,
+        "des": "I require a $50 downpayment for every photoshoot, to be paid at least a week in advance.",
         "image": "images/one.JPG"
 
 
@@ -10,30 +11,35 @@
         "title": "portrait",
         "id": 2,
         "price": 250,
+        "description": "",
         "image": "images/one.JPG"
     },
     {
         "title": "wedding",
         "id": 3,
         "price": 2000,
+        "description": "",
         "image": "images/one.JPG"
     },
     {
         "title": "elopement",
         "id": 4,
         "price": 350,
+        "description": "",
         "image": "images/one.JPG"
     },
     {
         "title": "couples",
         "id": 5,
         "price": 350,
+        "description": "",
         "image": "images/one.JPG"
     },
     {
         "title": "custom",
         "id": 6,
         "price": "undecided",
+        "description": "",
         "image": "images/one.JPG"
     }
 ]
