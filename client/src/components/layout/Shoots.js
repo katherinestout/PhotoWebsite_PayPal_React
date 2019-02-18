@@ -4,7 +4,7 @@ class Shoots extends Component {
   render() {
     return (
       <div>
-        
+        <h1>Shoots</h1>
       </div>
     )
   }

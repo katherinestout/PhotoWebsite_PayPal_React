@@ -1,0 +1,15 @@
+.Footer{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+
+    padding: 30px;
+   
+}
+
+.footerspace {
+
+        margin-left: 60px;
+        margin-right: 60px;
+
+}
