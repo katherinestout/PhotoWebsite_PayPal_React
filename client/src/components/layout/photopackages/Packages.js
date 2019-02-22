@@ -10,9 +10,8 @@ class Packages extends Component {
 
   state = {
     Packagesjson,
-    clicked: []
-
-  
+    clicked: [],
+    total: 0
   };
 
   handleClick = (price) => {
@@ -21,9 +20,14 @@ class Packages extends Component {
     clicked = price;
     console.log(clicked);
 
-    this.setState({
-      clicked: clicked
-    })
+    
+   this.setState({
+     clicked: clicked
+    });
+
+
+
+
 
   };
 
