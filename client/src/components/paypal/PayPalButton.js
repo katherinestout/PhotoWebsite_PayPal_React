@@ -99,7 +99,7 @@ class PayPalButton extends React.Component {
               />}
             </div>
           );
-    // Todo
+
   }
 }
 

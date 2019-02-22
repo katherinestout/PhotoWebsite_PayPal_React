@@ -8,7 +8,7 @@ const PackageCard = props => (
       <div className="img-container">
     
       <img alt="true" src = {props.image}
-    x
+    
       onClick={() => props.handleClick(props.price)}
       />
       </div>

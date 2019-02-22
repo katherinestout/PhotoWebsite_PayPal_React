@@ -4,6 +4,8 @@ import PackageCard from './PackageCard';
 import Wrapper from './Wrapper';
 import './css/packages.css';
 
+import PaymentPage from './../../paypal/PaymentPage';
+
 class Packages extends Component {
 
   state = {
@@ -34,6 +36,8 @@ class Packages extends Component {
         ))}
         
         </Wrapper>
+
+        <PaymentPage/>
       </div>
       </div>
     )

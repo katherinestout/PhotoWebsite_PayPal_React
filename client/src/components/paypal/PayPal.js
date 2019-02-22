@@ -35,7 +35,7 @@ class PayPal extends Component {
           env={ENV}
           commit={true}
           currency={'USD'}
-          total={100}
+          total={10}
           onSuccess={onSuccess}
           onError={onError}
           onCancel={onCancel}
