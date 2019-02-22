@@ -34,12 +34,5 @@
         "price": 350,
         "description": "",
         "image": "images/one.JPG"
-    },
-    {
-        "title": "custom",
-        "id": 6,
-        "price": "undecided",
-        "description": "",
-        "image": "images/one.JPG"
     }
 ]

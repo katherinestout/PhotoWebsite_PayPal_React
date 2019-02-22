@@ -4,24 +4,33 @@ import PackageCard from './PackageCard';
 import Wrapper from './Wrapper';
 import './css/packages.css';
 
-import PaymentPage from './../../paypal/PaymentPage';
+
 
 class Packages extends Component {
 
   state = {
     Packagesjson,
-    clickedArray: []
-  }
+    clicked: []
+
+  
+  };
 
   handleClick = (price) => {
-    let clickedArray = this.state.clickedArray;
-    clickedArray.push(price);
-    console.log(clickedArray);
-  }
+    let clicked = this.state.clicked;
+   // clicked.push(price);
+    clicked = price;
+    console.log(clicked);
+
+    this.setState({
+      clicked: clicked
+    })
+
+  };
 
   render() {
     return (
       <div>
+     
       <div className="wrapping">
         <Wrapper>
         {this.state.Packagesjson.map(Packagesjson => (
@@ -32,12 +41,17 @@ class Packages extends Component {
           handleClick = {this.handleClick} 
           image = {Packagesjson.image}
           des = {Packagesjson.des}
+          
           />
+          
         ))}
-        
+             <p> ClickedArray = {this.state.clicked}</p>
+    
         </Wrapper>
+       
+      
 
-        <PaymentPage/>
+   
       </div>
       </div>
     )

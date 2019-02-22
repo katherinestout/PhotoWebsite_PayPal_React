@@ -40,6 +40,8 @@ class PayPal extends Component {
           onError={onError}
           onCancel={onCancel}
         />
+
+  
       </div>
     );
   }

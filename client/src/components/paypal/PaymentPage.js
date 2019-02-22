@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PayPal from './PayPal';
+import Summary from './Summary';
 
 class PaymentPage extends Component {
   render() {
@@ -7,6 +8,7 @@ class PaymentPage extends Component {
       <div>
 
           <PayPal/>
+          <Summary/>
         
       </div>
     )
