@@ -1,15 +1,18 @@
 const express = require('express');
 const paypal = require('paypal-rest-sdk');
 const bodyParser = require('body-parser');
-
-//require('dotenv').config(); 
-
-//paypal
+const mongoose = require('mongoose');
 
 //body parser
 
 
 const app = express();
+
+//Database Config
+const db = require('./config/keys').mongoURI;
+
+//connect to mongodb
+mongoose.connect(db).then(() => console.log('MongoDB Connected')).catch(err => console.log(err));
 
 app.get('/', (req, res) => res.send('Hello!'));
 
