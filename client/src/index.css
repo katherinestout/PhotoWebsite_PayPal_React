@@ -6,7 +6,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Amatic SC', cursive;
 }
+
+p {
+  font-size: 25px;
+}
+
+.button {
+  font-size: 20px;
+  padding: 10px;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

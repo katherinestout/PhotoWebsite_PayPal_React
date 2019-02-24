@@ -8,32 +8,32 @@ class NavBar extends Component {
       <div>
         <ul className="navbar-nav">
         <li className="nav-item">
-            <Link className="btn" to="/home" 
-                style={{ textDecoration: 'none', color: 'black'}}>
+            <Link className="button" to="/home" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             Home
             </Link>
 
-            <Link className="btn" to="/shoots" 
-                style={{ textDecoration: 'none', color: 'black'}}>
+            <Link className="button" to="/shoots" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             Photoshoots
             </Link>
         
-            <Link className="btn" to="/aboutme"
-                style={{ textDecoration: 'none', color: 'black'}}>
+            <Link className="button" to="/aboutme"
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             About
             </Link>
-            <Link className="btn" to="/packages" 
-                style={{ textDecoration: 'none', color: 'black'}}>
+            <Link className="button" to="/packages" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             Packages
             </Link>
-            <Link className="btn" to="/inquiries"
-                style={{ textDecoration: 'none', color: 'black'}}>
+            <Link className="button" to="/inquiries"
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             Inquiries
             </Link>
 
-            <Link className="btn" to="/cart" 
-                style={{ textDecoration: 'none', color: 'black'}}>
-            Cart
+            <Link className="button" to="/downpayment" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+            Downpayment
             </Link>
         </li>
         </ul>

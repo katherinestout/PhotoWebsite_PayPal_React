@@ -1,41 +1,41 @@
 [
-    {"title": "downpayment",
+    {"title": "Downpayment",
         "id": 1,
         "price": 50,
         "des": "I require a $50 downpayment for every photoshoot, to be paid at least a week in advance.",
-        "image": "https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
+        "image": "https://images.unsplash.com/photo-1441014023725-517f53f8ed61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 
 
     },
     {
-        "title": "portrait",
+        "title": "Portrait",
         "id": 2,
         "price": 250,
         "des": "",
-        "image": "https://images.unsplash.com/photo-1525849621485-ad29b7be3f42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        "image": "https://images.unsplash.com/photo-1494765803320-93c95366f4b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
     },
     {
-        "title": "wedding",
+        "title": "Wedding",
         "id": 3,
         "price": 2000,
         "des": "",
-        "image": "https://images.unsplash.com/photo-1504618331119-b3c6abe31201?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=963&q=80"
+        "image": "https://images.unsplash.com/photo-1519123648360-eeb65861dc66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
     },
     {
-        "title": "elopement",
+        "title": "Elopement",
         "id": 4,
         "price": 350,
         "des": "",
         "image": "https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
     },
     {
-        "title": "couples",
+        "title": "Couples",
         "id": 5,
         "price": 350,
         "des": "",
-        "image": "https://images.unsplash.com/photo-1505963159476-8125e38777a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+        "image": "https://images.unsplash.com/photo-1504194569341-48a2e831a3a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
     },
-    {"title": "babies",
+    {"title": "Babies",
         "id": 6,
         "price": 300,
         "des": "",

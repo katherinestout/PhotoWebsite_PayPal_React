@@ -3,5 +3,13 @@
 }
 
 .aboutme {
-   text-align: left;
+   text-align: center;
+ 
 }
+
+.portrait {
+    width: 500px;
+}
+
+p {  margin-left: 20%;
+   margin-right: 20%;}

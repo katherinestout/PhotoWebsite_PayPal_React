@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Packages from './components/layout/photopackages/Packages.js';
 import Home from './components/layout/Home';
 import AboutMe from './components/layout/AboutMe';
-import Cart from './components/layout/Cart';
+import Downpayment from './components/layout/Downpayment';
 import Inquiries from'./components/layout/Inquiries';
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
@@ -26,7 +26,7 @@ class App extends Component {
 <Route exact path = "/inquiries" component={Inquiries}/>
 
 <Route exact path = "/packages" component={Packages}/>
-<Route exact path = "/cart" component={Cart}/>
+<Route exact path = "/downpayment" component={Downpayment}/>
 
 <Footer/>
 

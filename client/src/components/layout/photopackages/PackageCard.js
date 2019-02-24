@@ -3,13 +3,10 @@ import './css/style.css';
 
 const PackageCard = props => (
  
-      <div className = "card">
-
-      <div className="img-container">
+      <div>
+      <div>
     
       <img alt="true" src = {props.image}
-    
-      onClick={() => props.handleClick(props.price)}
       />
       </div>
 

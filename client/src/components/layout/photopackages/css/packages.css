@@ -1,16 +1,7 @@
 .wrapping{
     padding-top: 50px;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  
-    padding-right: 100px;
-    padding-left: 100px;
-    justify-content: space-around;
-    align-content: flex-start;
-    overflow: auto;
-}
 
-.eachdoctor{
-    padding-top: 10px;
+
+    text-align: center;
+   
 }
