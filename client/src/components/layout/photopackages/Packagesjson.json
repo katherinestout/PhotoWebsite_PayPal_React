@@ -3,7 +3,7 @@
         "id": 1,
         "price": 50,
         "des": "I require a $50 downpayment for every photoshoot, to be paid at least a week in advance.",
-        "image": "images/one.JPG"
+        "image": "https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
 
 
     },
@@ -11,28 +11,36 @@
         "title": "portrait",
         "id": 2,
         "price": 250,
-        "description": "",
-        "image": "images/one.JPG"
+        "des": "",
+        "image": "https://images.unsplash.com/photo-1525849621485-ad29b7be3f42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
     },
     {
         "title": "wedding",
         "id": 3,
         "price": 2000,
-        "description": "",
-        "image": "images/one.JPG"
+        "des": "",
+        "image": "https://images.unsplash.com/photo-1504618331119-b3c6abe31201?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=963&q=80"
     },
     {
         "title": "elopement",
         "id": 4,
         "price": 350,
-        "description": "",
-        "image": "images/one.JPG"
+        "des": "",
+        "image": "https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
     },
     {
         "title": "couples",
         "id": 5,
         "price": 350,
-        "description": "",
-        "image": "images/one.JPG"
+        "des": "",
+        "image": "https://images.unsplash.com/photo-1505963159476-8125e38777a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+    },
+    {"title": "babies",
+        "id": 6,
+        "price": 300,
+        "des": "",
+        "image": "https://images.unsplash.com/photo-1504151806752-5b3af8e39e4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80"
+    
+
     }
 ]

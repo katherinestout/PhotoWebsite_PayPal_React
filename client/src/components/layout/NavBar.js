@@ -30,6 +30,11 @@ class NavBar extends Component {
                 style={{ textDecoration: 'none', color: 'black'}}>
             Inquiries
             </Link>
+
+            <Link className="btn" to="/cart" 
+                style={{ textDecoration: 'none', color: 'black'}}>
+            Cart
+            </Link>
         </li>
         </ul>
         
