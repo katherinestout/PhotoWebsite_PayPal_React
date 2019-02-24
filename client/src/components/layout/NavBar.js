@@ -31,6 +31,11 @@ class NavBar extends Component {
             Inquiries
             </Link>
 
+            <Link className="button" to="/calendar" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+            Calendar
+            </Link>
+
             <Link className="button" to="/downpayment" 
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
             Downpayment
