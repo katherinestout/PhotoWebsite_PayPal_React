@@ -19,15 +19,17 @@ class Packages extends Component {
    // clicked.push(price);
     clicked = price;
     console.log(clicked);
-
     
+
+    let total = this.state.total;
+    total = +price + +total;
+    console.log(total);
+
+
    this.setState({
-     clicked: clicked
+     clicked: clicked,
+     total: total
     });
-
-
-
-
 
   };
 
@@ -49,7 +51,7 @@ class Packages extends Component {
           />
           
         ))}
-             <p> ClickedArray = {this.state.clicked}</p>
+             <p> Total Amount = {this.state.total}</p>
     
         </Wrapper>
        
