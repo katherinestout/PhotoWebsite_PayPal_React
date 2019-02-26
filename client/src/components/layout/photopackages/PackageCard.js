@@ -6,13 +6,12 @@ const PackageCard = props => (
       <div>
       <div>
     
-      <img alt="true" src = {props.image}
-      />
+      <img alt="true" src = {props.image}/>
       </div>
 
-      <p> {props.title}</p>
+      <p><b> {props.title} - ${props.price}</b></p>
       <p> {props.des} </p>
-      <p> ${props.price}</p>
+
       </div>
     )
 

@@ -1,0 +1,17 @@
+.homepic {
+    width: 100%;
+    opacity: 0.6;
+
+}
+.centered {
+
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+}
+
+.overlay{
+    background-color: whitesmoke;
+}

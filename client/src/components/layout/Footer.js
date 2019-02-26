@@ -7,7 +7,7 @@ class Footer extends Component {
       <div>
        <div className="Footer">
     <div className="footerspace">
-    <hr></hr>
+
     <div className="footer-copyright text-center py-3"> 
         <a href="https://www.github.com/katherinestout"
         style={{ textDecoration: 'none', color: 'black'}}>       

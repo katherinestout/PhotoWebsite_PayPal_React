@@ -20,7 +20,7 @@ class Packages extends Component {
       <div>
      
       <div className="wrapping">
-      <h1>Photo Packages</h1>
+      <h1><b>Photo Packages</b></h1>
         <Wrapper>
         {this.state.Packagesjson.map(Packagesjson => (
           <PackageCard

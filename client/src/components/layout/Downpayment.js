@@ -12,13 +12,15 @@ class Downpayment extends Component {
       className="downpaymentpic">
       </img>
 
-   
-   
-    
+      <div className="centered">
+      <h2>
+      <b>Click here to pay the $50 Downpayment
+      </b>
+      </h2>
 
-<h2>Click here to pay the $50 Downpayment</h2>
       <PayPal/>
-
+      </div>
+      
       </div>
 
 

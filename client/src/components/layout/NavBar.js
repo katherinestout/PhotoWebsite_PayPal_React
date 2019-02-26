@@ -10,35 +10,32 @@ class NavBar extends Component {
         <li className="nav-item">
             <Link className="button" to="/home" 
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Home
+           <b>Home</b> 
             </Link>
 
-            <Link className="button" to="/shoots" 
-                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Photoshoots
-            </Link>
+        
         
             <Link className="button" to="/aboutme"
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            About
+           <b>About</b> 
             </Link>
             <Link className="button" to="/packages" 
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Packages
+           <b> Packages</b> 
             </Link>
             <Link className="button" to="/inquiries"
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Inquiries
+            <b>Inquiries</b> 
             </Link>
 
             <Link className="button" to="/calendar" 
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Calendar
+           <b> Calendar</b> 
             </Link>
 
             <Link className="button" to="/downpayment" 
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-            Downpayment
+           <b>Downpayment</b> 
             </Link>
         </li>
         </ul>
