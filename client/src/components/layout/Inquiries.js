@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Inquiries extends Component {
   constructor(){
@@ -9,11 +10,25 @@ class Inquiries extends Component {
       message: 'Your Message'
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
     console.log(this.state.value);
+  }
+
+  async handleSubmit(event){
+    event.preventDefault();
+
+    const {name, email, message} = this.state;
+
+    const form = await axios.post('/api/form', {
+      name,
+      email,
+      message
+    });
   }
 
 
@@ -42,9 +57,6 @@ class Inquiries extends Component {
           type="textarea"
           name="message"/>
         </label>
-
-
-
 
         <input 
         type="submit" 
