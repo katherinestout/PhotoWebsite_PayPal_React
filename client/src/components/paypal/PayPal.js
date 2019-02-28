@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PayPalButton from './PayPalButton';
 
 
+
 require('dotenv').config(); 
 
 const CLIENT = {
@@ -17,10 +18,11 @@ const ENV = process.env.NODE_ENV === 'production'
 class PayPal extends Component {
   render() {
 
-   
 
   const onSuccess = (payment) =>
   console.log('Successful payment!', payment);
+
+    
 
   const onError = (error) =>
     console.log('Erroneous payment OR failed to load script!', error);

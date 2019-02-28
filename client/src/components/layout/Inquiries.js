@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {withRouter} from 'react-router-dom';
 
 class Inquiries extends Component {
   constructor(){
@@ -24,12 +25,23 @@ class Inquiries extends Component {
 
     const {name, email, message} = this.state;
 
+  
+
     const form = await axios.post('/api/form', {
       name,
       email,
       message
-    });
+    }).then( this.props.history.push("/home"))
+    
+    
+    ;
+
+   
+
+
   }
+
+
 
 
   render() {
@@ -68,4 +80,4 @@ class Inquiries extends Component {
   }
 }
 
-export default Inquiries;
+export default withRouter(Inquiries);
