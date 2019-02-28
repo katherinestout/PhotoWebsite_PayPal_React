@@ -7,10 +7,13 @@ import AboutMe from './components/layout/AboutMe';
 import Downpayment from './components/layout/Downpayment';
 import Inquiries from'./components/layout/Inquiries';
 import Calendar from './components/layout/Calendar';
+import Portal from './components/layout/Portal';
+
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
 
 import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
+
 
 
 
@@ -31,6 +34,7 @@ class App extends Component {
               <Route exact path = "/packages" component={Packages}/>
               <Route exact path ="/calendar" component={Calendar}/>
               <Route exact path = "/downpayment" component={Downpayment}/>
+              <Route exact path ="/portal" component={Portal}/>
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
            

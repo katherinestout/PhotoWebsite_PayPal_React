@@ -14,7 +14,8 @@ export default class Home extends Component {
       </img>
       
 
-      <h1 className="centered"><b>Jane Newport Photography</b></h1>
+      <h1 className="centered"><b>Jane Newport Photography</b>
+      <i class="fas fa-camera-retro"></i></h1>
       </div>
  
       </div>

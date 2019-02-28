@@ -37,6 +37,11 @@ class NavBar extends Component {
                 style={{ textDecoration: 'none', color: 'whitesmoke'}}>
            <b>Downpayment</b> 
             </Link>
+
+            <Link className="button" to="/portal" 
+                style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+           <b>Customer Portal</b> 
+            </Link>
         </li>
         </ul>
         

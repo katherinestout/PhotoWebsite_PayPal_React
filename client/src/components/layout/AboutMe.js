@@ -6,6 +6,7 @@ class AboutMe extends Component {
     return (
       <div className="aboutme">
         <h1 className="title"><b>About Me</b></h1>
+
         
         <img src="https://images.unsplash.com/photo-1465409042654-5314e9d1754b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" 
         alt="portrait"
