@@ -42,7 +42,7 @@ class Inquiries extends Component {
   render() {
     return (
       <div className="inquiries">
-          <h1>Inquiries</h1>
+          <h1><b>Inquiries</b></h1>
           <form onSubmit={this.handleSubmit}>
         <label className="label">
           Name:

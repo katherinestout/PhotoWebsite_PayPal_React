@@ -3,13 +3,10 @@
     color: black;
     text-align: center;
 
-    padding: 30px;
+  left: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
    
 }
 
-.footerspace {
-
-        margin-left: 60px;
-        margin-right: 60px;
-
-}

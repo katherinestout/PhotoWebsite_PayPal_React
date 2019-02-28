@@ -1,6 +1,10 @@
 .navbar-nav{
     background-color: black;
-    padding: 20px;
+    padding: 30px;
+
     text-align: right;
+    top: 0;
+    position: relative;
+    width: 100%;
    
 }

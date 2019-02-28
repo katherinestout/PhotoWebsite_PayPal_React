@@ -23,7 +23,7 @@ class App extends Component {
  
       <div className="App">
             <NavBar/>
-
+            
               <Route exact path = '/' component ={Home}/>
               <Route exact path ='/home' component={Home}/>
               <Route exact path = "/aboutme" component={AboutMe}/>
@@ -33,7 +33,7 @@ class App extends Component {
               <Route exact path = "/downpayment" component={Downpayment}/>
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
-
+           
             <Footer/>
       </div>
       
