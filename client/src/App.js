@@ -10,6 +10,8 @@ import Calendar from './components/layout/Calendar';
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
 
+import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
+
 
 
 class App extends Component {
@@ -29,6 +31,8 @@ class App extends Component {
               <Route exact path = "/packages" component={Packages}/>
               <Route exact path ="/calendar" component={Calendar}/>
               <Route exact path = "/downpayment" component={Downpayment}/>
+
+              <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
 
             <Footer/>
       </div>

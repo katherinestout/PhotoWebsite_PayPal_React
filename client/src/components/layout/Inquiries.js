@@ -31,14 +31,8 @@ class Inquiries extends Component {
       name,
       email,
       message
-    }).then( this.props.history.push("/home"))
-    
-    
+    }).then( this.props.history.push("/thankyouemail"))
     ;
-
-   
-
-
   }
 
 
