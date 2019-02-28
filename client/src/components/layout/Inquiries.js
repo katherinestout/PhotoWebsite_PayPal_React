@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {withRouter} from 'react-router-dom';
+import './layoutstyles/inquiries.css';
 
 class Inquiries extends Component {
   constructor(){
     super();
     this.state ={
-      name: 'Your Name',
-      email: 'Email@email.com',
-      message: 'Your Message'
+      name: '',
+      email: '',
+      message: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -43,30 +44,37 @@ class Inquiries extends Component {
       <div className="inquiries">
           <h1>Inquiries</h1>
           <form onSubmit={this.handleSubmit}>
-        <label>
+        <label className="label">
           Name:
           <input type="text" 
           onChange={this.handleChange}
-          name="name" />
+          name="name"
+          placeholder="First and Last" />
         </label>
-
-        <label>
+        <br></br>
+        <label className="label">
           Email:
           <input type="email"
           onChange={this.handleChange}
-          name="email"/>
+          name="email"
+          placeholder="email@email.com"/>
         </label>
-
-        <label>
+      <br></br>
+        <label className="label">
           Message:
           <textarea onChange={this.handleChange} 
           type="textarea"
-          name="message"/>
+          name="message"
+          placeholder="your message here"/>
         </label>
-
-        <input 
+      <br></br>
+ 
+        <input
+        className="submit button" 
         type="submit" 
-        value="Submit" />
+        value="Submit" 
+        />
+   
       </form>
         
       </div>
