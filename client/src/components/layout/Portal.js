@@ -12,7 +12,7 @@ export class Portal extends Component {
       <p>Signing up allows you to schedule a photoshoot and see my availability. This way there
         isn't a ton of back and fourth, and it is fairly straighforward to see what days and times
         work for us both. This is also how you can make a downpayment, as well as recieve edited photos.</p>
-      <p>In general, making an account makes the whole proccess easier.</p>
+      <p>In general, making an account makes the proccess whole lot easier.</p>
       <p> <i class="fas fa-camera-retro"></i><i>Jane Newport</i></p>
 
         <br></br>

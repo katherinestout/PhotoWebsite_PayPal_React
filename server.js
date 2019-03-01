@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
 
-//body parser
+//routes
+const profile = require('./routes/api/profile');
+const users = require('./routes/api/users');
 
 
 const app = express();
@@ -24,7 +26,14 @@ mongoose.connect(db).then(() => console.log('MongoDB Connected')).catch(err => c
 //get
 app.get('/', (req, res) => res.send('Hello!'));
 
-//post
+
+//use routes
+
+app.use('/api/users', users);
+app.use('/api/profile', profile);
+
+
+//Form for email
 app.post('/api/form', (req, res) => {
     //console.log(req.body);
 
@@ -72,6 +81,7 @@ app.post('/api/form', (req, res) => {
     })
 
 });
+
 
 const port = process.env.PORT || 5000;
 
