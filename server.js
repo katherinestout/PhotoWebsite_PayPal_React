@@ -3,6 +3,7 @@ const paypal = require('paypal-rest-sdk');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
+const passport = require('passport');
 
 //routes
 const profile = require('./routes/api/profile');
@@ -21,14 +22,17 @@ const db = require('./config/keys').mongoURI;
 //connect to mongodb
 mongoose.connect(db).then(() => console.log('MongoDB Connected')).catch(err => console.log(err));
 
+//Passport Middleware
+app.use(passport.initialize());
+
+//Passport config (put everything else for passport in here)
+require('./config/passport')(passport);
 
 //routes
 //get
 app.get('/', (req, res) => res.send('Hello!'));
 
-
 //use routes
-
 app.use('/api/users', users);
 app.use('/api/profile', profile);
 
