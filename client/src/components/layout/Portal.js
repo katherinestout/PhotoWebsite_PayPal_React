@@ -17,9 +17,14 @@ export class Portal extends Component {
 
         <br></br>
         <p>
-        <Link to = '/login' className="button" style={{ textDecoration: 'none'}}> 
+        <Link to = '/login' 
+        className="button" 
+        style={{ textDecoration: 'none'}}> 
         <button>Login</button> </Link>
-        <Link to = '/register' className="button" style={{ textDecoration: 'none'}}> 
+
+        <Link to = '/register' 
+        className="button" 
+        style={{ textDecoration: 'none'}}> 
         <button>Register</button> </Link>
         </p>
       

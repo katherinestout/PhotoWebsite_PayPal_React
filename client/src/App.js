@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+//BrowserRouter allows us to do a back button
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+
 import Packages from './components/layout/photopackages/Packages.js';
 import Home from './components/layout/Home';
 import AboutMe from './components/layout/AboutMe';
@@ -13,6 +15,9 @@ import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
 
 import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
+
+import Register from './components/layout/auth/Register';
+import Register from './components/layout/auth/Login';
 
 
 
@@ -37,6 +42,11 @@ class App extends Component {
               <Route exact path ="/portal" component={Portal}/>
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
+              <div className="container">
+              <Route exact path ="/register" component={Register}/>
+              <Route exact path ="/login" component={Login}/>
+
+              </div>
            
             <Footer/>
       </div>
