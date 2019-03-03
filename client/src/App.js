@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 //BrowserRouter allows us to do a back button
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-
+//redux
+import {Provider} from 'react-redux';
+import store from './store';
+//layout
 import Packages from './components/layout/photopackages/Packages.js';
 import Home from './components/layout/Home';
 import AboutMe from './components/layout/AboutMe';
@@ -10,23 +13,19 @@ import Downpayment from './components/layout/Downpayment';
 import Inquiries from'./components/layout/Inquiries';
 import Calendar from './components/layout/Calendar';
 import Portal from './components/layout/Portal';
-
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
-
 import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
 
 import Register from './components/layout/auth/Register';
-import Register from './components/layout/auth/Login';
-
-
-
+import Login from './components/layout/auth/Login';
 
 class App extends Component {
 
   render() {
 
     return (
+      <Provider store = {store}>
       <Router>
  
       <div className="App">
@@ -52,6 +51,7 @@ class App extends Component {
       </div>
       
       </Router>
+      </Provider>
     );
   }
 }

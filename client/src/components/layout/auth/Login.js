@@ -14,7 +14,7 @@ class Login extends Component {
       errors: {}
     };
 //binding "this" to onchange and onsubmit
-    this.onChange = this.onChange.bind(this);
+    this.onChange = this.onChange;
     this.onSubmit = this.onSubmit.bind(this);
   }
 
@@ -52,7 +52,7 @@ class Login extends Component {
     this.props.loginUser(userData);
   }
 
-  onChange(e) {
+  onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
 
