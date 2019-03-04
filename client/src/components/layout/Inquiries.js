@@ -44,6 +44,10 @@ class Inquiries extends Component {
 
       <div className="inquiries">
           <h1><b>Inquiries</b></h1>
+          <p>Have an idea or question?</p>
+          <p> Fill out the form below to 
+            get in contact with me!
+          </p>
 
           <form onSubmit={this.handleSubmit} className="inquiryform">
         <label className="label">
