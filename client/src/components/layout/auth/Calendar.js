@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './layoutstyles/calendar.css';
+import './style/calendar.css';
 
 class Calendar extends Component {
   render() {
     return (
       <div className="calendar">
-        <h1>Schedule a consultation meeting with me!</h1>
+        <h1>Schedule your photoshoot!</h1>
       </div>
     )
   }

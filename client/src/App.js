@@ -13,9 +13,8 @@ import store from './store';
 import Packages from './components/layout/photopackages/Packages.js';
 import Home from './components/layout/Home';
 import AboutMe from './components/layout/AboutMe';
-import Downpayment from './components/layout/Downpayment';
 import Inquiries from'./components/layout/Inquiries';
-import Calendar from './components/layout/Calendar';
+
 import Portal from './components/layout/Portal';
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
@@ -23,6 +22,8 @@ import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
 
 import Register from './components/layout/auth/Register';
 import Login from './components/layout/auth/Login';
+import Calendar from './components/layout/auth/Calendar';
+import Downpayment from './components/layout/auth/Downpayment';
 
 import PrivateRoute from './components/common/PrivateRoute';
 
@@ -42,12 +43,7 @@ if(localStorage.jwtToken) {
   if(decoded.exp < currentTime) {
 //then want to logout the user
 store.dispatch(logoutUser());
-
-//Redirect to the Login page
-window.location.href = '/login';
-
   }
-
 }
 
 class App extends Component {
