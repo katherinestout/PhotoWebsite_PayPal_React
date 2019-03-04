@@ -7,7 +7,7 @@
     text-align: left;
     margin-left: 30%;
     margin-bottom: 10%;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -19,12 +19,15 @@ textarea {
     width: 400px;
     height: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 
 input {
     margin-left: 15px;
     box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 
 .label {
@@ -32,10 +35,13 @@ input {
 }
 
 .submit {
-   margin-left: 250px;
+
    background-color: black;
    color: whitesmoke;
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   
+   font-family: 'Amatic SC', cursive;
+   margin-left: 25%;
 }
-p{text-align: center;}
+
+p{text-align: center;
+}
