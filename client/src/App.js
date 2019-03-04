@@ -28,6 +28,12 @@ import Downpayment from './components/layout/auth/Downpayment';
 import PrivateRoute from './components/common/PrivateRoute';
 
 import Dashboard from './components/layout/auth/Dashboard';
+import CreateAccount from './components/create-account/CreateAccount';
+import  EditAccount  from './components/edit-account/EditAccount';
+import { clearCurrentAccount } from './actions/accountActions';
+
+
+
 
 //check for jwt token
 if(localStorage.jwtToken) {
@@ -43,6 +49,7 @@ if(localStorage.jwtToken) {
   if(decoded.exp < currentTime) {
 //then want to logout the user
 store.dispatch(logoutUser());
+store.dispatch(clearCurrentAccount());
   }
 }
 
@@ -75,6 +82,15 @@ class App extends Component {
 
       <Switch>
       <PrivateRoute exact path ="/dashboard" component ={ Dashboard }/>
+      </Switch>
+      <Switch>
+      <PrivateRoute exact path ="/create-account"
+       component ={ CreateAccount }/>
+      </Switch>
+
+      <Switch>
+      <PrivateRoute exact path ="/edit-account"
+       component ={ EditAccount }/>
       </Switch>
            
             <Footer/>
