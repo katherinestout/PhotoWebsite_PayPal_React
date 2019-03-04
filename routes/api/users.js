@@ -6,8 +6,8 @@ const keys = require('../../config/keys');
 const passport = require('passport');
 
 //load input validation
-const validateRegisterInput = require('../../validation/register');
-const validateLoginInput = require('../../validation/login');
+const validateRegisterInput = require('../../client/src/validation/register');
+const validateLoginInput = require('../../client/src/validation/login');
 
 //Load User model
 const User = require('../../models/User');
@@ -43,9 +43,9 @@ User.findOne({email: req.body.email})
                 email: req.body.email,
                 password: req.body.password
             });
-            //generating a salt
-            //basically- password protecting
-            bcrypt.genSalt(10, (err, salt) => {
+    //generating a salt
+    //basically- password protecting
+    bcrypt.genSalt(10, (err, salt) => {
                 //store hash in DB
                 //hashing password
                 bcrypt.hash(newUser.password, salt, (err, hash) => {
@@ -86,7 +86,7 @@ User.findOne({email})
             errors.email = 'User not found';
             return res.status(404).json(errors);
         }
-        
+
 //Check password if found
 bcrypt.compare(password, user.password)
         .then(isMatch => {

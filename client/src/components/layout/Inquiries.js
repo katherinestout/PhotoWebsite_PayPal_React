@@ -41,9 +41,11 @@ class Inquiries extends Component {
 
   render() {
     return (
+
       <div className="inquiries">
           <h1><b>Inquiries</b></h1>
-          <form onSubmit={this.handleSubmit}>
+
+          <form onSubmit={this.handleSubmit} className="inquiryform">
         <label className="label">
           Name:
           <input type="text" 
