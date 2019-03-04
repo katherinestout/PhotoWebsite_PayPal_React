@@ -19,4 +19,4 @@ phone: {
     
 });
 
-module.exports = Profile = mongoose.model('account', AccountSchema);
+module.exports = Account = mongoose.model('account', AccountSchema);
