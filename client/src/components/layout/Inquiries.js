@@ -26,14 +26,14 @@ class Inquiries extends Component {
 
     const {name, email, message} = this.state;
 
-  
+    
 
     const form = await axios.post('/api/form', {
       name,
       email,
       message
-    }).then( this.props.history.push("/thankyouemail"))
-    ;
+    }).then( this.props.history.push("/thankyouemail"));
+      console.log(form);
   }
 
 
