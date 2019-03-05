@@ -18,9 +18,14 @@ export class Dashboard extends Component {
   }
 
   render() {
-    const {user} = this.props.auth;
+    const {user, email} = this.props.auth;
+    console.log(email);
+
+
+    
 
     const{profile, loading} = this.props.profile;
+    //console.log(profile);
 
     let dashBoardContent;
 
@@ -31,7 +36,7 @@ export class Dashboard extends Component {
       if(Object.keys(profile).length > 0){
         dashBoardContent = (
           <div>
-          <h1>Welcome, {user.name}!</h1>
+          <h1>Welcome, {user.name} !</h1>
      
           <h2>I am so excited you are interested in my business.</h2>
           <p>Please schedule a day and time you are available.
@@ -43,7 +48,7 @@ export class Dashboard extends Component {
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
             
           <div className="card">
-          <p>Email: {profile.email}</p>
+          <p>Email: {user.email}</p>
           <p>Phone: {profile.phone}</p>
 
           <Link to ="/editprofile" className="btn btn-dark edit">Edit Contact Info</Link>
@@ -61,7 +66,7 @@ export class Dashboard extends Component {
       } else {
         dashBoardContent = (
           <div>
-                 <h1>Welcome, {user.name}!</h1>
+                 <h1>Welcome, {user.email}!</h1>
          
           <h2>I am so excited you are interested in my business.</h2>
           <p>Please schedule a day and time you are available.
@@ -72,7 +77,9 @@ export class Dashboard extends Component {
           </p>
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
           <div className='card'>
+
             <p> Please set up your Contact Information.</p>
+
             <Link to ="/createprofile" className="btn btn-dark create">
                 Contact Info
                 </Link>
