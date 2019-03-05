@@ -105,6 +105,7 @@ const profileFields = {};
 profileFields.user = req.user.id;
 
 if(req.body.phone)profileFields.phone = req.body.phone;
+if(req.body.email)profileFields.email = req.body.email;
 
 
 

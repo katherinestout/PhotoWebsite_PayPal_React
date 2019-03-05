@@ -12,7 +12,7 @@ class Profile extends Component {
     componentDidMount(){
         if(this.props.match.params.handle){
             //check for the handle to match
-                this.props.getProfileByHandle(this.props.match.params.handle);
+                this.props.getProfileByHandle(this.props.match.params.phone);
         }
     }
 
@@ -63,15 +63,15 @@ class Profile extends Component {
 }
 
 Profile.propTypes = {
-    getProfileByHandle: PropTypes.func.isRequired,
+   
     getPosts: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired,
-    post: PropTypes.object.isRequired
+  
 }
 
 const mapStateToProps = state => ({
     profile: state.profile,
-    post: state.post
+ 
 })
 
 export default connect(mapStateToProps, {getProfileByHandle, getPosts})(Profile);

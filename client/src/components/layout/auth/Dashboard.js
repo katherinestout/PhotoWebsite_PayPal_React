@@ -32,7 +32,7 @@ export class Dashboard extends Component {
         dashBoardContent = (
           <div>
           <h1>Welcome, {user.name}!</h1>
-          {profile.phone}
+     
           <h2>I am so excited you are interested in my business.</h2>
           <p>Please schedule a day and time you are available.
           </p>
@@ -41,16 +41,23 @@ export class Dashboard extends Component {
               day and time.
           </p>
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
+            
+          <div className="card">
+          <p>Email: {profile.email}</p>
+          <p>Phone: {profile.phone}</p>
 
-          <Link to ="/editprofile" className="btn btn-dark">Edit Profile</Link>
+          <Link to ="/editprofile" className="btn btn-dark edit">Edit Contact Info</Link>
                       <br></br>
 
           <button onClick={this.onDeleteClick.bind(this)} 
-                        className="btn btn-light">
+                        className="btn btn-light edit">
                         Delete Account</button>
+                        </div>
           </div>
 
         );
+
+
       } else {
         dashBoardContent = (
           <div>
@@ -64,10 +71,12 @@ export class Dashboard extends Component {
               day and time.
           </p>
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
-            <p> Please set up your profile.</p>
-            <Link to ="/createprofile" className="btn btn-dark">
-                Create a Profile!
+          <div className='card'>
+            <p> Please set up your Contact Information.</p>
+            <Link to ="/createprofile" className="btn btn-dark create">
+                Contact Info
                 </Link>
+                </div>
           </div>
         );
       }

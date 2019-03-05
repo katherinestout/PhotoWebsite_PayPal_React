@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 import TextFieldGroup from '../../../components/common/TextFieldGroup';
 //import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 //import InputGroup from '../common/InputGroup';
-import { createProfile } from '../../../actions/profileActions';
+import { createProfile} from '../../../actions/profileActions';
+import './create.css';
+
 
 class CreateProfile extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-
+      email: '',
       phone: '',
       errors: {}
     };
@@ -20,9 +22,14 @@ class CreateProfile extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+
   componentWillReceiveProps(nextProps) {
+  
     if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
+      this.setState({ errors: nextProps.errors,
+                         });
+
+
     }
   }
 
@@ -31,6 +38,7 @@ class CreateProfile extends Component {
 
     const profileData = {
       phone: this.state.phone,
+      email: this.state.email
      
     };
 
@@ -43,6 +51,7 @@ class CreateProfile extends Component {
 
   render() {
     const { errors} = this.state;
+  
 
       
     return (
@@ -50,7 +59,8 @@ class CreateProfile extends Component {
         <div className="container">
        
            
-              <h1>Create Your Profile</h1>
+              <h1>Contact Info</h1>
+      
               <p>
                Please enter your phone number
               </p>
@@ -65,6 +75,16 @@ class CreateProfile extends Component {
                   error={errors.phone}
                   info="Makes it easier to contact you!"
                 />
+
+        <TextFieldGroup
+                  placeholder="* Email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
+                  info="Makes it easier to contact you!"
+                />
+
              
                 <input
                   type="submit"
@@ -81,11 +101,14 @@ class CreateProfile extends Component {
 }
 CreateProfile.propTypes = {
   profile: PropTypes.object.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
+
+  
 };
 const mapStateToProps = state => ({
   profile: state.profile,
   errors: state.errors
+  
 });
-export default connect(mapStateToProps, { createProfile })((CreateProfile)
+export default connect(mapStateToProps, { createProfile})((CreateProfile)
 );

@@ -7,6 +7,7 @@ import TextFieldGroup from '../../common/TextFieldGroup';
 //import InputGroup from '../common/InputGroup';
 import { createProfile, getCurrentProfile } from '../../../actions/profileActions';
 //import isEmpty from '../../validation/is-empty';
+import './edit.css'
 
 
 export class EditProfile extends Component {
@@ -14,6 +15,7 @@ export class EditProfile extends Component {
     constructor(props){
         super(props);
         this.state = {
+            email: '',
             phone: '',
             errors: {}
 
@@ -38,6 +40,7 @@ export class EditProfile extends Component {
         //set component fields state
         this.setState({
            phone: profile.phone,
+           email: profile.email
         });
         
         }
@@ -49,6 +52,7 @@ export class EditProfile extends Component {
       const profileData = {
 
         phone: this.state.phone,
+        email: this.state.email
        
 
       };
@@ -66,7 +70,7 @@ export class EditProfile extends Component {
 
     
     return (
-      <div className="create-profile">
+      <div className="edit-profile">
         <div className ="container">
      
         <h1>Edit Profile</h1> 
@@ -81,6 +85,16 @@ export class EditProfile extends Component {
                   value={this.state.phone}
                   onChange={this.onChange}
                   error={errors.phone}
+                  info="Makes it easier to contact you!"
+                />
+
+
+        <TextFieldGroup
+                  placeholder="* Email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
                   info="Makes it easier to contact you!"
                 />
     

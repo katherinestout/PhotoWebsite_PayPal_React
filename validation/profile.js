@@ -10,6 +10,7 @@ if(Validator.isEmpty(data.phone)) {
     errors.handle ="Phone number is required!";
 }
 
+
   return {
     errors,
     isValid: isEmpty(errors)
