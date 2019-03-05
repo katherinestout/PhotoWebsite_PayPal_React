@@ -7,7 +7,7 @@ import TextFieldGroup from '../../common/TextFieldGroup';
 //import InputGroup from '../common/InputGroup';
 import { createProfile, getCurrentProfile } from '../../../actions/profileActions';
 //import isEmpty from '../../validation/is-empty';
-//import { withRouter } from 'react-router';
+
 
 export class EditProfile extends Component {
 
@@ -45,6 +45,7 @@ export class EditProfile extends Component {
 
     onSubmit(e){
         e.preventDefault();
+
       const profileData = {
 
         phone: this.state.phone,

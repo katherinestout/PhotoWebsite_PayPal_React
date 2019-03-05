@@ -87,6 +87,5 @@ const mapStateToProps = state => ({
   profile: state.profile,
   errors: state.errors
 });
-export default connect(mapStateToProps, { createProfile })(
-(CreateProfile)
+export default connect(mapStateToProps, { createProfile })((CreateProfile)
 );
