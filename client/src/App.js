@@ -29,8 +29,8 @@ import PrivateRoute from './components/common/PrivateRoute';
 
 import Dashboard from './components/layout/auth/Dashboard';
 import CreateProfile from './components/layout/create-profile/CreateProfile';
-import  EditProfile  from './components/layout/edit-account/EditProfile';
-//import { clearCurrentProfile } from './actions/profileActions';
+import  EditProfile  from './components/layout/edit-profile/EditProfile';
+import { clearCurrentProfile } from './actions/profileActions';
 
 
 
