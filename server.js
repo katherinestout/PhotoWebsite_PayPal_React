@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const passport = require('passport');
 
 //routes
-const account = require('./routes/api/account');
+const profile = require('./routes/api/profile');
 const users = require('./routes/api/users');
 const posts = require('./routes/api/posts');
 
@@ -35,7 +35,7 @@ app.get('/', (req, res) => res.send('Hello!'));
 
 //use routes
 app.use('/api/users', users);
-app.use('/api/account', account);
+app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 
 

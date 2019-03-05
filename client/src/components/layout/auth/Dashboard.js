@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import './style/dashboard.css';
 
-import {getCurrentAccount} from '../../../actions/accountActions';
+//import {getCurrentAccount} from '../../../actions/accountActions';
 
 
 
 export class Dashboard extends Component {
-    componentDidMount() {
-        this.props.getCurrentAccount();
-        //getCurrentProfile is being called when we enter the dashboard
-    }
+
   render() {
     const {user} = this.props.auth;
 
@@ -27,8 +24,7 @@ export class Dashboard extends Component {
          
 
             
-                <Link to ="/editaccount" className="btn btn-dark">
-                Edit Account</Link>
+            
                
                 <h2>I am so excited you are interested in my business.</h2>
                 <p>Please schedule a day and time you are available.
@@ -46,13 +42,13 @@ export class Dashboard extends Component {
 
 Dashboard.propTypes = {
     auth: PropTypes.object.isRequired,
-    getCurrentAccount: PropTypes.func.isRequired,
-    account: PropTypes.object.isRequired
+    //getCurrentAccount: PropTypes.func.isRequired,
+    //account: PropTypes.object.isRequired
   }
   
   const mapStateToProps = (state) => ({
     auth: state.auth,
-    account: state.account
+    //account: state.account
   });
   
-export default connect(mapStateToProps, {getCurrentAccount})(Dashboard);
+export default connect(mapStateToProps)(Dashboard);
