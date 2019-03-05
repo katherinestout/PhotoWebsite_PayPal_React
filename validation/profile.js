@@ -10,14 +10,6 @@ if(Validator.isEmpty(data.phone)) {
     errors.handle ="Phone number is required!";
 }
 
-
-if(!isEmpty(data.instagram)) {
-    if(!Validator.isURL(data.instagram)){
-    errors.instagram ="Not a valid URL!";
-    }
-}
-
-
   return {
     errors,
     isValid: isEmpty(errors)

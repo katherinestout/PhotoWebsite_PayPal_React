@@ -54,8 +54,17 @@ export class Dashboard extends Component {
       } else {
         dashBoardContent = (
           <div>
-
-            <p>Welcome! Please set up your profile.</p>
+                 <h1>Welcome, {user.name}!</h1>
+         
+          <h2>I am so excited you are interested in my business.</h2>
+          <p>Please schedule a day and time you are available.
+          </p>
+          <p>When your day and time has been confirmed, 
+              you are required to make a $50 downpayment to ensure your
+              day and time.
+          </p>
+          <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
+            <p> Please set up your profile.</p>
             <Link to ="/createprofile" className="btn btn-dark">
                 Create a Profile!
                 </Link>
