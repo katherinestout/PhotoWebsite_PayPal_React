@@ -28,8 +28,8 @@ import Downpayment from './components/layout/auth/Downpayment';
 import PrivateRoute from './components/common/PrivateRoute';
 
 import Dashboard from './components/layout/auth/Dashboard';
-//import CreateProfile from './components/create-account/CreateProfile';
-//import  EditProfile  from './components/edit-account/EditProfile';
+import CreateProfile from './components/layout/create-profile/CreateProfile';
+import  EditProfile  from './components/layout/edit-account/EditProfile';
 //import { clearCurrentProfile } from './actions/profileActions';
 
 
@@ -50,7 +50,7 @@ if(localStorage.jwtToken) {
 //then want to logout the user
 store.dispatch(logoutUser());
 
-//store.dispatch(clearCurrentProfile());
+store.dispatch(clearCurrentProfile());
   }
 }
 
@@ -84,7 +84,12 @@ class App extends Component {
         <Switch>
       <PrivateRoute exact path ="/dashboard" component ={ Dashboard }/>
       </Switch>
-
+      <Switch>
+      <PrivateRoute exact path ="/createprofile" component ={ CreateProfile }/>
+      </Switch>
+      <Switch>
+      <PrivateRoute exact path ="/editprofile" component ={ EditProfile }/>
+      </Switch>
      
            
             <Footer/>

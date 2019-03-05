@@ -6,8 +6,8 @@ const passport = require('passport');
 //Post model
 const Post = require('../../models/Post');
 
-//Account model
-const Account = require('../../models/Account');
+//Profile model
+const Profile = require('../../models/Profile');
 
 //validation
 const validatePostInput = require('../../validation/post');
@@ -57,9 +57,9 @@ router.post('/', passport.authenticate('jwt', {session: false}),
         time: req.body.time,
         name: req.body.name,
         user: req.user.id,
-       date: req.body.date,
-       typeShoot: req.body.typeShoot
-
+        date: req.body.date,
+        typeShoot: req.body.typeShoot
+      
     });
     newPost.save()
     .then(post => res.json(post));
@@ -75,7 +75,7 @@ router.delete(
     '/:id',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
-      Account.findOne({ user: req.user.id }).then(account => {
+      Profile.findOne({ user: req.user.id }).then(profile => {
         Post.findById(req.params.id)
           .then(post => {
             // Check for post owner
@@ -95,6 +95,6 @@ router.delete(
 
 
 
-
+  
 
 module.exports = router;

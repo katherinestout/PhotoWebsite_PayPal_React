@@ -2,19 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../common/TextFieldGroup';
-import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
-import InputGroup from '../common/InputGroup';
+//import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
+//import InputGroup from '../common/InputGroup';
 import { createProfile } from '../../actions/profileActions';
 
 class CreateProfile extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      displaySocialInputs: false,
-      handle: '',
-      bio: '',
-      twitter: '',
-      instagram: '',
+
+      phone: '',
       errors: {}
     };
 
@@ -32,10 +30,8 @@ class CreateProfile extends Component {
     e.preventDefault();
 
     const profileData = {
-      handle: this.state.handle,
-      bio: this.state.bio,
-      twitter: this.state.twitter,
-      instagram: this.state.instagram
+      phone: this.state.phone,
+     
     };
 
     this.props.createProfile(profileData, this.props.history);
@@ -46,86 +42,38 @@ class CreateProfile extends Component {
   }
 
   render() {
-    const { errors, displaySocialInputs } = this.state;
+    const { errors} = this.state;
 
-    let socialInputs;
-
-    if (displaySocialInputs) {
-      socialInputs = (
-        <div>
-          <InputGroup
-            placeholder="Twitter Profile URL"
-            name="twitter"
-            icon="fab fa-twitter"
-            value={this.state.twitter}
-            onChange={this.onChange}
-            error={errors.twitter}
-          />
-
-
-          <InputGroup
-            placeholder="Instagram Page URL"
-            name="instagram"
-            icon="fab fa-instagram"
-            value={this.state.instagram}
-            onChange={this.onChange}
-            error={errors.instagram}
-          />
-        </div>
-      );
-    }
-
-
+      
     return (
       <div className="create-profile">
         <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Create Your Profile</h1>
-              <p className="lead text-center">
-                Let's get some information to make your profile stand out
+       
+           
+              <h1>Create Your Profile</h1>
+              <p>
+               Please enter your phone number
               </p>
-              <small className="d-block pb-3">* = required fields</small>
+              <small>* = required fields</small>
               <form onSubmit={this.onSubmit}>
+
                 <TextFieldGroup
-                  placeholder="* Profile Handle"
-                  name="handle"
-                  value={this.state.handle}
+                  placeholder="* Phone"
+                  name="phone"
+                  value={this.state.phone}
                   onChange={this.onChange}
-                  error={errors.handle}
-                  info="A unique handle for your profile URL. Your full name, company name, nickname"
+                  error={errors.phone}
+                  info="Makes it easier to contact you!"
                 />
-                <TextAreaFieldGroup
-                  placeholder="Short Bio"
-                  name="bio"
-                  value={this.state.bio}
-                  onChange={this.onChange}
-                  error={errors.bio}
-                  info="Tell us a little about yourself"
-                />
-                <div className="mb-3">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      this.setState(prevState => ({
-                        displaySocialInputs: !prevState.displaySocialInputs
-                      }));
-                    }}
-                    className="btn btn-light"
-                  >
-                    Add Social Network Links
-                  </button>
-                  <span className="text-muted">Optional</span>
-                </div>
-                {socialInputs}
+             
                 <input
                   type="submit"
                   value="Submit"
                   className="btn btn-info btn-block mt-4"
                 />
               </form>
-            </div>
-          </div>
+   
+       
         </div>
       </div>
     );
