@@ -28,9 +28,9 @@ import Downpayment from './components/layout/auth/Downpayment';
 import PrivateRoute from './components/common/PrivateRoute';
 
 import Dashboard from './components/layout/auth/Dashboard';
-//import CreateAccount from './components/create-account/CreateAccount';
-//import  EditAccount  from './components/edit-account/EditAccount';
-//import { clearCurrentAccount } from './actions/accountActions';
+//import CreateProfile from './components/create-account/CreateProfile';
+//import  EditProfile  from './components/edit-account/EditProfile';
+//import { clearCurrentProfile } from './actions/profileActions';
 
 
 
@@ -49,7 +49,8 @@ if(localStorage.jwtToken) {
   if(decoded.exp < currentTime) {
 //then want to logout the user
 store.dispatch(logoutUser());
-//store.dispatch(clearCurrentAccount());
+
+//store.dispatch(clearCurrentProfile());
   }
 }
 
