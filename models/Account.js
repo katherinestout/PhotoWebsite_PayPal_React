@@ -7,11 +7,6 @@ user:{
     type: Schema.Types.ObjectId,
     ref: 'users'
 },
-email: {
-    type: String,
-    required: true,
-    max: 40
-},
 phone: {
     type: String,
     required: true,

@@ -4,7 +4,7 @@ const isEmpty =require('./is-empty');
 module.exports = function validateAccountInput(data){
     let errors = {};
 
-data.handle = !isEmpty(data.phone) ? data.phone : '';
+data.phone = !isEmpty(data.phone) ? data.phone : '';
 
 
 

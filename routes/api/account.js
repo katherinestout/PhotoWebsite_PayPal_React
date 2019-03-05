@@ -104,7 +104,7 @@ if(!isValid){
 const accountFields = {};
 accountFields.user = req.user.id;
 
-if(req.body.phone) accountFields.phone = req.body.phone;
+if(req.body.phone)accountFields.phone = req.body.phone;
 
 
 //search for user by id
@@ -123,7 +123,7 @@ Account.findOne({user: req.user.id})
         //check to see if handle exsists
         Account.findOne({ phone: accountFields.phone}).then(account =>{
             if(account){
-                errors.phoen = 'This phone already exists';
+                errors.phone = 'This phone already exists';
                 res.status(400).json(errors);
             }
         //if it doesnt then save account

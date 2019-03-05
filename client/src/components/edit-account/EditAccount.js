@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../common/TextFieldGroup';
 import { createAccount, getCurrentAccount } from '../../actions/accountActions';
-import isEmpty from '../../validation/is-empty';
+//import isEmpty from '../../validation/is-empty';
 
 
 export class EditAccount extends Component {
@@ -29,11 +29,11 @@ export class EditAccount extends Component {
         if(nextProps.errors) {
             this.setState({errors: nextProps.errors});
         }
-        if(nextProps.account.account){
+        if(nextProps.account){
 
-            const account = nextProps.account.account;
+            const account = nextProps.account;
            
-            account.phone = !isEmpty(account.phone) ? account.phone : '';
+           // account.phone = !isEmpty(account.phone) ? account.phone : '';
         
         //set component fields state
         this.setState({
@@ -60,6 +60,7 @@ export class EditAccount extends Component {
 
   render() {
       const {errors} =this.state;
+
     return (
       <div className="create-account">
         <div className ="container">
@@ -69,6 +70,7 @@ export class EditAccount extends Component {
         <small> * = required fields
         </small>
         <form onSubmit={this.onSubmit}>
+
         <TextFieldGroup
         placeholder="* Phone"
         name="phone"

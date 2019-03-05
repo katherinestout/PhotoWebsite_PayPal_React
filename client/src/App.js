@@ -80,18 +80,19 @@ class App extends Component {
 
               </div>
 
-      <Switch>
+        <Switch>
       <PrivateRoute exact path ="/dashboard" component ={ Dashboard }/>
-      </Switch>
-      <Switch>
-      <PrivateRoute exact path ="/create-account"
-       component ={ CreateAccount }/>
       </Switch>
 
       <Switch>
-      <PrivateRoute exact path ="/edit-account"
+      <PrivateRoute exact path ="/createaccount"
+       component ={ CreateAccount }/>
+    </Switch>
+
+        <Switch>
+      <PrivateRoute exact path ="/editaccount"
        component ={ EditAccount }/>
-      </Switch>
+        </Switch>
            
             <Footer/>
       </div>
