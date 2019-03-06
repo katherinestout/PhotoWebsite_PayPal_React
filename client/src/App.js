@@ -32,7 +32,8 @@ import CreateProfile from './components/layout/create-profile/CreateProfile';
 import  EditProfile  from './components/layout/edit-profile/EditProfile';
 import { clearCurrentProfile } from './actions/profileActions';
 
-import Profile from './components/layout/profile/Profile';
+import Profile from './../src/components/layout/profile/Profile';
+import Profiles from './components/layout/profile/Profiles';
 
 
 
@@ -81,6 +82,7 @@ class App extends Component {
               <Route exact path ="/register" component={Register}/>
               <Route exact path ="/login" component={Login}/>
 
+              <Route exact path ="/profiles" component ={ Profiles }/>
               <Route exact path ="/profile/:email" component ={ Profile }/>
 
               </div>

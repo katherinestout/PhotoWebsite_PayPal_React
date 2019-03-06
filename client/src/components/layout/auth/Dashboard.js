@@ -51,7 +51,8 @@ export class Dashboard extends Component {
           <p>Email: {profile.email}</p>
           <p>Phone: {profile.phone}</p>
 
-          <Link to ="/profile/:phone" className="btn btn-dark edit">Profile</Link>
+          <Link to ={`/profile/${profile.email}`}  className="btn btn-dark edit">Profile</Link>
+        
                       <br></br>
 
           <button onClick={this.onDeleteClick.bind(this)} 
