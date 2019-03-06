@@ -18,8 +18,8 @@ export class Dashboard extends Component {
   }
 
   render() {
-    const {user, email} = this.props.auth;
-    console.log(email);
+    const {user} = this.props.auth;
+    console.log(user);
 
 
     
@@ -48,10 +48,10 @@ export class Dashboard extends Component {
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
             
           <div className="card">
-          <p>Email: {user.email}</p>
+          <p>Email: {profile.email}</p>
           <p>Phone: {profile.phone}</p>
 
-          <Link to ="/editprofile" className="btn btn-dark edit">Edit Contact Info</Link>
+          <Link to ="/profile/:phone" className="btn btn-dark edit">Profile</Link>
                       <br></br>
 
           <button onClick={this.onDeleteClick.bind(this)} 

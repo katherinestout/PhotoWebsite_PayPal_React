@@ -34,7 +34,27 @@ router.get('/',
         .catch(err => res.status(404).json(err));
     }
   );
+//GET request route: api/profile/handle/:hanlde
+//get profile by handle
+//Public access route
 
+router.get('/phone/:phone', (req, res) => {
+  const errors = {};
+  //match and grab handle from db
+  Profile.findOne({ phone: req.params.phone })
+  .populate('user')
+  .then (profile => {
+      if(!profile){
+          errors.noprofile = 'There is no profile for this user!!';
+          res.status(404).json(errors);
+          console.log("help no profile");
+
+      }
+      res.json(profile); 
+  }).catch(err => res.status(404).json(err));
+  console.log("help somethign went wrong");
+
+  });
 
 //GET request route: api/profile/user/:user_id
 //get profile by user id

@@ -42,10 +42,10 @@ export const createProfile = (profileData, history) => dispatch => {
   };
 
   // Get profile by handle
-export const getProfileByHandle = handle => dispatch => {
+export const getProfileByEmail = email => dispatch => {
     dispatch(setProfileLoading());
     axios
-      .get(`/api/profile/handle/${handle}`)
+      .get(`/api/profile/email/${email}`)
       .then(res =>
         dispatch({
           type: GET_PROFILE,

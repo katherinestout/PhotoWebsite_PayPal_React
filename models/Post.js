@@ -20,7 +20,15 @@ const PostSchema = new Schema({
     typeShoot: {
         type: String,
         required: true
+    },
+    likes: [
+        {
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'users'
     }
+}
+]
 
 
 });

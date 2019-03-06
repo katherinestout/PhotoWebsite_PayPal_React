@@ -13,7 +13,8 @@ phone: {
 },
 email: {
     type: String,
-    ref: 'users'
+    ref: 'users',
+    required: true
    
 }
     

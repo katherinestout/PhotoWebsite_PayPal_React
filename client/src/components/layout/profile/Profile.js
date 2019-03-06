@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
-import {getProfileByHandle} from '../../actions/profileActions';
-import {getPosts} from '../../actions/postActions';
-import ProfileFeed from '../profilePosts/ProfileFeed';
+import {getProfileByEmail} from '../../../actions/profileActions';
+//import {getPosts} from '../../actions/postActions';
+//import ProfileFeed from '../profilePosts/ProfileFeed';
 
 
 class Profile extends Component {
     componentDidMount(){
-        if(this.props.match.params.handle){
+        if(this.props.match.params.email){
             //check for the handle to match
-                this.props.getProfileByHandle(this.props.match.params.phone);
+                this.props.getProfileByEmail(this.props.match.params.email);
         }
     }
 
@@ -20,7 +20,7 @@ class Profile extends Component {
   render() {
       //destucturing
       const {profile, loading} = this.props.profile;
-      const {posts} = this.props.post;
+      //const {posts} = this.props.post;
   
       //initializing profileContent
       let profileContent;
@@ -30,16 +30,15 @@ class Profile extends Component {
       } else {
           profileContent = (
                 <div>
-                    <div className="row">
-                    <div className="col-md-6">
-                    <Link to = "/profiles" className="btn btn-light float-left">
-                    All Users
-                    </Link>
+                    <div>
+                    <div>
+                
+                
                     </div>
-                    <div className="col-md-6"/>
+                    <div/>
                     </div>
                     <ProfileHeader profile = {profile}/>
-                    <ProfileFeed posts = {posts}/>
+                  
             
               
                 </div>
@@ -49,9 +48,9 @@ class Profile extends Component {
     return (
 <div className="profile">
 <div className="container">
-<div className="card profilecard">
-<div className="row">
-<div className="col-md-12 profile">
+<div>
+<div>
+<div className="profile">
 {profileContent}
 </div>
 </div>
@@ -64,7 +63,7 @@ class Profile extends Component {
 
 Profile.propTypes = {
    
-    getPosts: PropTypes.func.isRequired,
+    //getPosts: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired,
   
 }
@@ -74,4 +73,4 @@ const mapStateToProps = state => ({
  
 })
 
-export default connect(mapStateToProps, {getProfileByHandle, getPosts})(Profile);
+export default connect(mapStateToProps, {getProfileByEmail})(Profile);
