@@ -38,10 +38,10 @@ router.get('/',
 //get profile by handle
 //Public access route
 
-router.get('/phone/:phone', (req, res) => {
+router.get('/email/:email', (req, res) => {
   const errors = {};
   //match and grab handle from db
-  Profile.findOne({ phone: req.params.phone })
+  Profile.findOne({ email: req.params.email })
   .populate('user')
   .then (profile => {
       if(!profile){
@@ -143,9 +143,9 @@ Profile.findOne({user: req.user.id})
     }else{
         //create
         //check to see if handle exsists
-        Profile.findOne({ phone: profileFields.phone}).then(profile =>{
+        Profile.findOne({ email: profileFields.email}).then(profile =>{
             if(profile){
-                errors.phone = 'This number already exists';
+                errors.email = 'This number already exists';
                 res.status(400).json(errors);
             }
         //if it doesnt then save profile

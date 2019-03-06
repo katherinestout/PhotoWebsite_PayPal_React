@@ -6,6 +6,7 @@ import ProfileHeader from './ProfileHeader';
 import {getProfileByEmail} from '../../../actions/profileActions';
 //import {getPosts} from '../../actions/postActions';
 //import ProfileFeed from '../profilePosts/ProfileFeed';
+import './profile.css';
 
 
 class Profile extends Component {
