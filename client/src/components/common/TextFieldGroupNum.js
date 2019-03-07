@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 //pass in the properties
 
 
-const TextFieldGroup = ({
+const TextFieldGroupNum = ({
     name,
     placeholder,
     value,
@@ -43,10 +43,10 @@ const TextFieldGroup = ({
 };
 //Add all the textfieldgroup to proptypes
 
-TextFieldGroup.propTypes = {
+TextFieldGroupNum.propTypes = {
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string,
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    value: PropTypes.number.isRequired,
     info: PropTypes.string,
     error: PropTypes.string,
     type: PropTypes.string.isRequired,
@@ -59,8 +59,8 @@ TextFieldGroup.propTypes = {
 //default props, (if we don't pass it in what will happen? anything else will be false/null
 //if not passed in)
 
-TextFieldGroup.defaultProps = {
+TextFieldGroupNum.defaultProps = {
     type: 'text'
 };
 
-export default TextFieldGroup;
+export default TextFieldGroupNum;

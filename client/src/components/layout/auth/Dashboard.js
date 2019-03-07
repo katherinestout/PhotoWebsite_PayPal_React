@@ -48,8 +48,6 @@ export class Dashboard extends Component {
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
             
           <div className="card">
-          <p>Email: {profile.email}</p>
-          <p>Phone: {profile.phone}</p>
 
           <Link to ={`/profile/${profile.email}`}  className="btn btn-dark edit">Profile</Link>
         
