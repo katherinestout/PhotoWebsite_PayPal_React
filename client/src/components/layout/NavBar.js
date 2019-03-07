@@ -51,6 +51,11 @@ class NavBar extends Component {
       <nav>
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
+      
+        <Link className="button" to="/feed"
+              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+           Quotes Feed
+          </Link>
 
         <Link className="button" to="/dashboard" 
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>

@@ -7,21 +7,18 @@ import PropTypes from 'prop-types';
 //pass in the properties
 
 
-const TextFieldGroupNum = ({
+const TextAreaFieldGroup = ({
     name,
     placeholder,
     value,
     error,
     info,
-    type,
-    onChange,
-    disabled
+    onChange
 }) => {
     return(
  <div>
     <div className="form-group">
-        <input
-        type='text'
+        <textarea
         className={classnames('form-control', {
                       'is-invalid': error
                     })}
@@ -29,38 +26,30 @@ const TextFieldGroupNum = ({
         name={name}
         value={value}
         onChange={onChange}
-        disabled = {disabled}
+      
                   />
         {info && <small className="form-text text-muted">{info}</small>}
         
-        {error && (
-        <div className="invalid-feedback">{error}</div>
-        )}
+        {error && 
+        <div className="invalid-feedback">{error}</div>}
         </div>
 
         </div>
     );
 };
-//Add all the textfieldgroup to proptypes
 
-TextFieldGroupNum.propTypes = {
+
+TextAreaFieldGroup.propTypes = {
     name: PropTypes.string.isRequired,
     placeholder: PropTypes.string,
-    value: PropTypes.number.isRequired,
+    value: PropTypes.string.isRequired,
+    
     info: PropTypes.string,
     error: PropTypes.string,
-    type: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired,
-    disabled: PropTypes.string,
 
+    onChange: PropTypes.func.isRequired
 
 };
 
-//default props, (if we don't pass it in what will happen? anything else will be false/null
-//if not passed in)
 
-TextFieldGroupNum.defaultProps = {
-    type: 'text'
-};
-
-export default TextFieldGroupNum;
+export default TextAreaFieldGroup;

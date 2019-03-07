@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../../../components/common/TextFieldGroup';
-//import TextFieldGroupNum from '../../../common/TextAreaFieldGroup';
-//import InputGroup from '../common/InputGroup';
 import { createProfile} from '../../../actions/profileActions';
 import './create.css';
 

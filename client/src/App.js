@@ -35,6 +35,8 @@ import { clearCurrentProfile } from './actions/profileActions';
 import Profile from './../src/components/layout/profile/Profile';
 import Profiles from './components/layout/profile/Profiles';
 
+import Posts from './components/layout/posts/Posts';
+
 
 
 
@@ -86,17 +88,23 @@ class App extends Component {
               <Route exact path ="/profile/:email" component ={ Profile }/>
 
               </div>
-
-        <Switch>
+      
+      <Switch>
       <PrivateRoute exact path ="/dashboard" component ={ Dashboard }/>
       </Switch>
+
       <Switch>
       <PrivateRoute exact path ="/createprofile" component ={ CreateProfile }/>
       </Switch>
+
       <Switch>
       <PrivateRoute exact path ="/editprofile" component ={ EditProfile }/>
       </Switch>
-     
+
+      <Switch>
+      <PrivateRoute exact path ="/feed"
+       component ={ Posts}/>
+      </Switch>
            
             <Footer/>
       </div>
