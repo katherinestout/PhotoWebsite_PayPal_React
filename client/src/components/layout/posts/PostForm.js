@@ -33,14 +33,15 @@ onSubmit(e){
 
   const {user} = this.props.auth;
 
-         //const {profile} = this.props.profile;
+  const {profile} = this.props.profile;
  
 
   const newPost = {
     typeShoot: this.state.typeShoot,
     name: user.name,
     date: this.state.date,
-    time: this.state.time
+    time: this.state.time,
+    email: profile.email
  
   };
 

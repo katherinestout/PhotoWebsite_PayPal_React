@@ -11,7 +11,7 @@ module.exports = function validatePostInput(data){
     data.date = !isEmpty(data.date) ? data.date : '' ;
   
   if (Validator.isEmpty(data.typeShoot)) {
-    errors.typeShoot = 'Invalid';
+    errors.typeShoot = 'Must enter type of shoot';
   }
 
   if(Validator.isEmpty(data.time)){

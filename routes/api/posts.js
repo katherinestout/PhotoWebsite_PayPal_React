@@ -54,6 +54,7 @@ router.post('/', passport.authenticate('jwt', {session: false}),
     }
 
     const newPost = new Post({
+        email: req.body.email,
         time: req.body.time,
         name: req.body.name,
         user: req.user.id,

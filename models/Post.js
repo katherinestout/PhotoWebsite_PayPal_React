@@ -21,6 +21,11 @@ const PostSchema = new Schema({
         type: String,
         required: true
     },
+    email: {
+        type: String,
+        ref: 'profile'
+
+    },
     likes: [
         {
     user: {
