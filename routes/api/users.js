@@ -93,7 +93,7 @@ bcrypt.compare(password, user.password)
             if(isMatch){
                 //res.json({msg: 'Password Success'});
                 //User Matched
-                const payload = {id: user.id, name: user.name}; //creating jwt payload
+                const payload = {id: user.id, name: user.name, email: user.email}; //creating jwt payload
 
                 //Sign Token
                 jwt.sign(payload, 

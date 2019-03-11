@@ -19,13 +19,13 @@ export class Dashboard extends Component {
 
   render() {
     const {user} = this.props.auth;
-    console.log(user);
+    //console.log(this.props.auth);
 
 
     
 
     const{profile, loading} = this.props.profile;
-    //console.log(profile);
+    //console.log(this.props.profile.profile);
 
     let dashBoardContent;
 
@@ -65,7 +65,7 @@ export class Dashboard extends Component {
       } else {
         dashBoardContent = (
           <div>
-                 <h1>Welcome, {user.email}!</h1>
+                 <h1>Welcome, {user.name}!</h1>
          
           <h2>I am so excited you are interested in my business.</h2>
           <p>Please schedule a day and time you are available.
