@@ -1,0 +1,48 @@
+.postform{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 650px;
+}
+.card {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.allform{
+    width: 98%;
+  
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Roboto';
+  
+}
+
+input {
+
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Roboto';
+
+}
+
+.label {
+    margin: 20px;
+}
+
+.submit {
+
+   background-color: black;
+   color: whitesmoke;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   font-family: 'Amatic SC', cursive;
+
+}
+
+p{text-align: center;
+}

@@ -3,11 +3,8 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../../common/TextFieldGroup';
-//import TextFieldGroupNum from '../../common/TextFieldGroupNum';
-//import InputGroup from '../common/InputGroup';
 import { createProfile, getCurrentProfile } from '../../../actions/profileActions';
-//import isEmpty from '../../validation/is-empty';
-import './edit.css'
+//import './edit.css'
 
 
 export class EditProfile extends Component {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../../../components/common/TextFieldGroup';
 import { createProfile} from '../../../actions/profileActions';
-import './create.css';
+//import './create.css';
 
 
 class CreateProfile extends Component {

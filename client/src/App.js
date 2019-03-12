@@ -37,6 +37,7 @@ import Profile from './../src/components/layout/profile/Profile';
 import Profiles from './components/layout/profile/Profiles';
 
 import Posts from './../src/components/layout/posts/Posts';
+import Request from './components/layout/posts/Request';
 
 
 
@@ -106,7 +107,11 @@ class App extends Component {
       <PrivateRoute exact path ="/feed" component ={ Posts}/>
       </Switch>
 
-      
+      <Switch>
+      <PrivateRoute exact path ="/request" component ={Request}/>
+      </Switch>
+
+
            
             <Footer/>
       </div>

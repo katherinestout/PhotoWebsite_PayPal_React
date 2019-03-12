@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {withRouter} from 'react-router-dom';
-import './layoutstyles/inquiries.css';
+//import './layoutstyles/inquiries.css';
 
 class Inquiries extends Component {
   constructor(){

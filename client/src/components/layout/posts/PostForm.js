@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import TextAreaFieldGroup from '../../common/TextAreaFieldGroup';
 import TextFieldGroup from '../../common/TextFieldGroup';
 import {addPost} from '../../../actions/postActions';
+import './postform.css';
 
 class PostForm extends Component {
 
@@ -33,7 +34,7 @@ onSubmit(e){
 
   const {user} = this.props.auth;
 
-  const {profile} = this.props.profile;
+  //const {profile} = this.props.profile;
  
 
   const newPost = {
@@ -41,7 +42,7 @@ onSubmit(e){
     name: user.name,
     date: this.state.date,
     time: this.state.time,
-    email: profile.email
+    email: user.email
  
   };
 
@@ -59,10 +60,16 @@ onChange(e){
     const{errors} = this.state;
 
     return (
-      <div>
+      <div className="postform">
       <div className="card">
-      <div>
+      <div className="allform">
+    
+        <h4>
+        <b>
       Shoot request: please enter your best availability, based on the calendar.
+      </b>
+      </h4>
+      
       </div>
       <div>
       <form onSubmit = {this.onSubmit}>
@@ -109,11 +116,11 @@ PostForm.propTypes = {
   addPost: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
-  profile: PropTypes.object.isRequired
+ // profile: PropTypes.object.isRequired
 };
 const mapStateToProps = state => ({
   errors: state.errors,
   auth: state.auth,
-  profile: state.profile
+ // profile: state.profile
 });
 export default connect(mapStateToProps, {addPost})(PostForm);
