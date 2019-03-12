@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {withRouter} from 'react-router-dom';
-//import './layoutstyles/inquiries.css';
+import './layoutstyles/inquiries.css';
 
 class Inquiries extends Component {
   constructor(){
@@ -76,7 +76,7 @@ class Inquiries extends Component {
       <br></br>
  
         <input
-        className="submit button" 
+        className="button" 
         type="submit" 
         value="Submit" 
         />

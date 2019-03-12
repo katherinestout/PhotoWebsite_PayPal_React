@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { registerUser } from '../../../actions/authActions';
 import TextFieldGroup from '../../common/TextFieldGroup';
-//import './style/loginregister.css';
+import './style/loginregister.css';
 
 class Register extends Component {
   constructor() {
@@ -57,10 +57,10 @@ class Register extends Component {
       <div className="register">
         <div className="container">
 
-              <h1 className="cap">Sign Up</h1>
+              <h1>Sign Up</h1>
          
               
-              <form noValidate onSubmit={this.onSubmit}>
+              <form noValidate onSubmit={this.onSubmit} className="registerform">
 <TextFieldGroup
 placeholder = "Name"
 name="name"
@@ -93,7 +93,7 @@ onChange={this.onChange}
 error={errors.password2}
 />
 
-                <input type="submit" className="btn btn-dark btn-block" />
+                <input type="submit" className="button" />
               </form>
             </div>
   

@@ -2,20 +2,32 @@
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
-  height: 850px;
-  margin-left: 30%;
-  margin-right: 30%;
+  height: 650px;
+
+}
+.loginform{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .register {
         text-align: center;
         margin-top: 5%;
         margin-bottom: 5%;
-        height: 850px;
-        margin-left: 30%;
-        margin-right: 30%;
+        height: 650px;
+      
 }
 
-.btn {
+.registerform{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.button {
   font-family: 'Amatic SC', cursive;
+  background-color: black;
+  color: whitesmoke;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

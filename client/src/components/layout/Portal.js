@@ -19,13 +19,13 @@ export class Portal extends Component {
         <p>
         <Link to = '/login' 
         className="button" 
-        style={{ textDecoration: 'none'}}> 
-        <button>Login</button> </Link>
+        style={{ textDecoration: 'none', color: 'whitesmoke'}}> 
+       Login </Link>
 
         <Link to = '/register' 
         className="button" 
-        style={{ textDecoration: 'none'}}> 
-        <button>Register</button> </Link>
+        style={{ textDecoration: 'none', margin: '5%', color: 'whitesmoke'}}> 
+       Register</Link>
         </p>
       
       </div>

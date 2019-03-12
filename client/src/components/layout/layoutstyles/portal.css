@@ -6,9 +6,11 @@
     margin-right: 10%;
 }
 
-button {
-    background-color: black;
-    color: whitesmoke;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    .button {
+        font-family: 'Amatic SC', cursive;
+        background-color: black;
+        color: whitesmoke;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
     
-}

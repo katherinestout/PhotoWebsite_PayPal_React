@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginUser } from '../../../actions/authActions';
 import TextFieldGroup from '../../common/TextFieldGroup';
-//import './style/loginregister.css';
+import './style/loginregister.css';
 
 
 class Login extends Component {
@@ -69,7 +69,7 @@ render() {
               <p className="heading">
                 Log In to your Account
               </p>
-              <form onSubmit={this.onSubmit}>
+              <form onSubmit={this.onSubmit} className="loginform">
 <TextFieldGroup
 placeholder = "Email Address"
 name="email"
@@ -86,7 +86,7 @@ value={this.state.password}
 onChange={this.onChange}
 error={errors.password}
 />
-                <input type="submit" className="btn btn-dark btn-block" />
+                <input type="submit" className="button" />
               </form>
          
         </div>
