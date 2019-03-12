@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 //import {Link} from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
 import {getProfileByEmail} from '../../../actions/profileActions';
-//import {getPosts} from '../../actions/postActions';
-//import ProfileFeed from '../profilePosts/ProfileFeed';
+import {getPosts} from '../../../actions/postActions';
+import ProfileFeed from '../../layout/profile-posts/ProfileFeed';
 import './profile.css';
 
 
@@ -21,13 +21,14 @@ class Profile extends Component {
   render() {
       //destucturing
       const {profile, loading} = this.props.profile;
-      //const {posts} = this.props.post;
+      const {posts} = this.props.post;
   
       //initializing profileContent
       let profileContent;
     //check to see if profile is null or loading
       if(profile === null || loading){
           profileContent= <h4>Loading...</h4>
+
       } else {
           profileContent = (
                 <div>
@@ -39,6 +40,7 @@ class Profile extends Component {
                     <div/>
                     </div>
                     <ProfileHeader profile = {profile}/>
+                    <ProfileFeed posts = {posts}/>
                   
             
               
@@ -63,15 +65,17 @@ class Profile extends Component {
 }
 
 Profile.propTypes = {
-   
-    //getPosts: PropTypes.func.isRequired,
+    getProfileByEmail: PropTypes.func.isRequired,
+    getPosts: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired,
+    post: PropTypes.object.isRequired
   
 }
 
 const mapStateToProps = state => ({
     profile: state.profile,
+    post: state.post
  
 })
 
-export default connect(mapStateToProps, {getProfileByEmail})(Profile);
+export default connect(mapStateToProps, {getProfileByEmail, getPosts})(Profile);

@@ -18,7 +18,7 @@ class ProfileHeader extends Component {
      
           
 
-        <p>My Shoots:</p>
+        <p>My Upcoming Shoots:</p>
         
         </div>
       </div>

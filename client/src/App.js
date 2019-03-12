@@ -28,6 +28,7 @@ import Downpayment from './components/layout/auth/Downpayment';
 import PrivateRoute from './components/common/PrivateRoute';
 
 import Dashboard from './components/layout/auth/Dashboard';
+
 import CreateProfile from './components/layout/create-profile/CreateProfile';
 import  EditProfile  from './components/layout/edit-profile/EditProfile';
 import { clearCurrentProfile } from './actions/profileActions';
@@ -35,7 +36,7 @@ import { clearCurrentProfile } from './actions/profileActions';
 import Profile from './../src/components/layout/profile/Profile';
 import Profiles from './components/layout/profile/Profiles';
 
-import Posts from './components/layout/posts/Posts';
+import Posts from './../src/components/layout/posts/Posts';
 
 
 
@@ -102,9 +103,10 @@ class App extends Component {
       </Switch>
 
       <Switch>
-      <PrivateRoute exact path ="/feed"
-       component ={ Posts}/>
+      <PrivateRoute exact path ="/feed" component ={ Posts}/>
       </Switch>
+
+      
            
             <Footer/>
       </div>
