@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PayPal from '../../paypal/PayPal';
-//import './style/downpayment.css';
+import './style/downpayment.css';
 
 class Downpayment extends Component {
   render() {

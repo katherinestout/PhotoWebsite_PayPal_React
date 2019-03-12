@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import PostForm from './PostForm';
 //import {getPosts} from '../../../actions/postActions';
 
+
 class Request extends Component {
 
 
@@ -11,7 +12,7 @@ class Request extends Component {
 
 
     return (
-      <div className="feed">
+      <div>
         <div className="container">
         <div>
         <div>

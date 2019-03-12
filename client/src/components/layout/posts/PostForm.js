@@ -61,19 +61,18 @@ onChange(e){
 
     return (
       <div className="postform">
-      <div className="card">
-      <div className="allform">
-    
-        <h4>
-        <b>
-      Shoot request: please enter your best availability, based on the calendar.
-      </b>
-      </h4>
-      
-      </div>
       <div>
-      <form onSubmit = {this.onSubmit}>
-          <div className="form-group">
+        <h2><b>Photoshoot request:</b></h2>
+        <h4><b>
+   Please enter your best availability, based on the calendar.
+      </b></h4>
+      <br></br>
+
+      </div>
+    
+      <form onSubmit = {this.onSubmit} className="postformform">
+
+          <div>
 
           <TextAreaFieldGroup
           placeholder="Type of shoot"
@@ -107,8 +106,7 @@ onChange(e){
           </button>
       </form>
       </div>
-      </div> 
-      </div>
+    
     )
   }
 }

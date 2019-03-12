@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../../../components/common/TextFieldGroup';
 import { createProfile} from '../../../actions/profileActions';
-//import './create.css';
+import './create.css';
 
 
 class CreateProfile extends Component {
@@ -63,7 +63,7 @@ class CreateProfile extends Component {
                Please enter your phone number
               </p>
               <small>* = required fields</small>
-              <form onSubmit={this.onSubmit}>
+              <form onSubmit={this.onSubmit} className="createprofileform">
 
                 <TextFieldGroup
                   placeholder="* Phone"

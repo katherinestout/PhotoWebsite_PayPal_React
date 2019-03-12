@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import TextFieldGroup from '../../common/TextFieldGroup';
 import { createProfile, getCurrentProfile } from '../../../actions/profileActions';
-//import './edit.css'
+import './edit.css'
 
 
 export class EditProfile extends Component {
@@ -74,7 +74,7 @@ export class EditProfile extends Component {
        
         <small> * = required fields
         </small>
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit} className="editprofileform">
 
         <TextFieldGroup
                   placeholder="* Phone"

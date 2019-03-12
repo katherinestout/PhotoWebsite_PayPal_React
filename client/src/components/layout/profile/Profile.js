@@ -31,14 +31,8 @@ class Profile extends Component {
 
       } else {
           profileContent = (
-                <div>
-                    <div>
-                    <div>
+                <div className="profilecontent card">
                 
-                
-                    </div>
-                    <div/>
-                    </div>
                     <ProfileHeader profile = {profile}/>
                     <ProfileFeed posts = {posts}/>
                   
@@ -50,15 +44,9 @@ class Profile extends Component {
 
     return (
 <div className="profile">
-<div className="container">
-<div>
-<div>
-<div className="profile">
+
 {profileContent}
-</div>
-</div>
-</div>
-</div>
+
 </div>
     )
   }

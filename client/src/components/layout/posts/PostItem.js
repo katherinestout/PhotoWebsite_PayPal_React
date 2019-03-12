@@ -38,13 +38,10 @@ import {deletePost,
 
     return (
       <div>
-        <div className="card card-body mb-3">
-        <div className="row">
-          <div className="col-md-2">
-        
-          
+        <div className="card">
+        <div>
+          <div>
             <br />
-
             <p>
 
             <Link to={`/profile/${post.email}`}style={{textDecoration: 'none', color:'black'}}  >
@@ -86,8 +83,6 @@ import {deletePost,
                     <i className="fas fa-times" />
                   </button>
                 ) : null}
-                
-      
           </div>
         </div>
       </div>

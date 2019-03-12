@@ -1,12 +1,15 @@
 .edit-profile{
+    
     margin-top: 5%;
+    margin-bottom: 5%;
     height: 650px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
-}
-
-form {
-
-    margin-left: 30%;
-    margin-right: 30%;
  }
+ .editprofileform{
  
+    margin-left: 25%;
+    margin-right: 25%;
+ 
+ }

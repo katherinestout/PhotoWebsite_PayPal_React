@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 //import PostForm from './PostForm';
 import PostFeed from './PostFeed';
 import {getPosts} from '../../../actions/postActions';
+import './posts.css';
 
 class Posts extends Component {
 
@@ -27,19 +28,10 @@ class Posts extends Component {
     }
 
     return (
-      <div className="feed">
+      <div className="postfeed">
         <div className="container">
-        <div>
-        <div>
-        
         {postContent}
-        
-        </div>
-        </div>
-        
-        </div>
-
-        
+        </div>  
       </div>
     );
   }
