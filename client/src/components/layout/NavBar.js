@@ -63,16 +63,23 @@ class NavBar extends Component {
       <nav>
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
+
+
+      <Link className="button" to={`/profile/${this.props.auth.user.email}`}  
+              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+         <b>{user.name}</b> 
+          </Link>
       
         <Link className="button" to="/feed"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
           <b> Quotes Feed</b>
           </Link>
 
-        <Link className="button" to={`/profile/${this.props.auth.user.email}`}  
+          <Link className="button" to="/request"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-         <b>{user.name}</b> 
+          <b> Schedule your Shoot</b>
           </Link>
+
 
           <Link className="button" to="/calendar" 
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
