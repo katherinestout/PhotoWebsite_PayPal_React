@@ -16,18 +16,25 @@ class NavBar extends Component {
     this.props.clearCurrentProfile();
   }
 
+  //{isAthenticated && isAdmin ? adminLinks : guestlinks}
+/* if (isAuthenticated && isAdmin){
+      adminLinks
+} else if (isAuthenticated){
+  authLinks
+} else {
+  guestLinks
+}
+*/
+// if (user.email === admin@gmail.com){adminLinks} else {authLinks}
+
   render() {
 
     const {isAuthenticated, user} = this.props.auth;
-    //const {profile} = this.props.profile;
-    //const {email} = this.props.profile;
-   //const{profile} = this.props.profile;
+  
    console.log(this.props.auth.user.email);
- 
-  
-   
-  
 
+  
+//guest links
     const guestLinks = (
       
       <nav>
@@ -59,7 +66,11 @@ class NavBar extends Component {
       </ul>
       </nav>
     );
+
+    //auth links
     const authLinks = (
+     
+
       <nav>
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
@@ -70,10 +81,6 @@ class NavBar extends Component {
          <b>{user.name}</b> 
           </Link>
       
-        <Link className="button" to="/feed"
-              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-          <b> Quotes Feed</b>
-          </Link>
 
           <Link className="button" to="/request"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
@@ -99,16 +106,61 @@ class NavBar extends Component {
       </ul>
       </nav>
     );
+//admin links
+    const adminLinks = (
+      <nav>
+      <ul className="navbar-nav mr-auto">
+      <li className="nav-item">
 
+
+      <Link className="button" to={`/profile/${this.props.auth.user.email}`}  
+              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+         <b>{user.name}</b> 
+          </Link>
+      
+        <Link className="button" to="/feed"
+              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+          <b> Quotes Feed</b>
+          </Link>
+
+          <Link className="button" to="/calendar" 
+              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+         <b> Calendar</b> 
+          </Link>
+
+          <a href="/home" onClick={this.onLogoutClick.bind(this)} className="button"
+          style={{ textDecoration: 'none', color: 'whitesmoke'}}>
+          <b>logout</b>
+          </a>
+      </li>
+      </ul>
+      </nav>
+    );
+
+    const renderLinks = () => {
+      if (isAuthenticated){
+       return authLinks
+
+      } else {
+       return guestLinks;
+      }
+   
+    } 
+
+//   {isAuthenticated ? authLinks : guestLinks}
     return (
       <div>
         
-       {isAuthenticated ? authLinks : guestLinks}
+     
+       {renderLinks()}
         
       </div>
     )
   }
 }
+
+
+
 NavBar.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
