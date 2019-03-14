@@ -33,6 +33,9 @@ class NavBar extends Component {
   
    console.log(this.props.auth.user.email);
 
+
+    
+
   
 //guest links
     const guestLinks = (
@@ -138,8 +141,17 @@ class NavBar extends Component {
     );
 
     const renderLinks = () => {
-      if (isAuthenticated){
-       return authLinks
+        const adminA = 'greg';
+        let adminB = `${this.props.auth.user.name}`;
+        console.log(adminB);
+
+
+
+      if (adminA === adminB){
+       return adminLinks;
+
+      } else if (isAuthenticated) {
+        return authLinks;
 
       } else {
        return guestLinks;
