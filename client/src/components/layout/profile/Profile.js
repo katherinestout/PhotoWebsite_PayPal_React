@@ -31,13 +31,11 @@ class Profile extends Component {
 
       } else {
           profileContent = (
-                <div className="profilecontent card">
-                
-                    <ProfileHeader profile = {profile}/>
-                    <ProfileFeed posts = {posts}/>
-                  
-            
-              
+                <div className="profilecontent">
+                <div className="card profileheader">  
+                <ProfileHeader profile = {profile}/></div>
+                  <div className="card profilefeed">
+                  <ProfileFeed posts = {posts}/></div>
                 </div>
           )
       }

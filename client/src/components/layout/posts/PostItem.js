@@ -63,8 +63,9 @@ import {deletePost,
                   type="button"
                   className="btn btn-light mr-1"
                 >
+             
                   <i
-                    className={classnames('fas fa-thumbs-up', {
+                    className={classnames('far fa-check-square', {
                       'text-info': this.findUserLike(post.likes)
                     })}
                   />

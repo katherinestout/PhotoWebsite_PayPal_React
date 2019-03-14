@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import classnames from 'classnames';
-import {deletePost, 
-    addLike} from '../../../actions/postActions';
+import {deletePost} from '../../../actions/postActions';
 import './shoots.css';
 
 
@@ -13,14 +12,7 @@ import './shoots.css';
          this.props.deletePost(id);
      }
 
-     onLikeClick(id){
-         this.props.addLike(id);
-
-     }
-     onUnlikeClick(id){
-         this.props.removeLike(id);
-
-     }
+ 
      //find out if user liked already
 
      findUserLike(likes){
@@ -41,28 +33,19 @@ import './shoots.css';
 
     return (
       <div>
-        <div className="card">
         <div>
-          <div>
-        
-          
-       
-           
-          </div>
+        <div>
           <div>
           <p> {post.typeShoot}</p>
             <p> {post.time}</p>
             <p> {post.date}</p>
-           
-
-            
                 <button
-                  onClick={this.onLikeClick.bind(this, post._id)}
                   type="button"
                   className="btn btn-light"
                 >
+             
                   <i
-                    className={classnames('fas fa-thumbs-up', {
+                    className={classnames('far fa-check-square', {
                       'text-info': this.findUserLike(post.likes)
                     })}
                   />
@@ -71,9 +54,6 @@ import './shoots.css';
                   {post.likes.length}</span>
                 </button>
 
-             
-
-            
                 {post.user === auth.user.id ? (
                   <button
                     onClick={this.onDeleteClick.bind(this, post._id)}
@@ -94,7 +74,6 @@ import './shoots.css';
 
 ShootItem.propTypes = {
     deletePost: PropTypes.func.isRequired,
-    addLike: PropTypes.func.isRequired,
     post: PropTypes.object.isRequired,
     auth: PropTypes.object.isRequired,
 
@@ -105,4 +84,4 @@ const mapStateToProps = state => ({
 
 });
 
-export default connect(mapStateToProps, {deletePost, addLike})(ShootItem);
+export default connect(mapStateToProps, {deletePost})(ShootItem);

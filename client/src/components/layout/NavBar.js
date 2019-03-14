@@ -141,11 +141,13 @@ class NavBar extends Component {
     );
 
     const renderLinks = () => {
-        const adminA = 'greg';
+      //for the admin link, if the username is admin you get admin nav links
+      //not totally secure with just username but for this project purpose it works
+        const adminA = 'admin';
         let adminB = `${this.props.auth.user.name}`;
         console.log(adminB);
-
-
+        
+        //switching between admin, user/auth, and guest links
 
       if (adminA === adminB){
        return adminLinks;

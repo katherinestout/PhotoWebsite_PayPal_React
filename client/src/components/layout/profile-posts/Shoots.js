@@ -33,18 +33,7 @@ class Shoots extends Component {
 
     return (
       <div>
-        <div>
-        <div>
-        <div>
-        
         {shootContent}
-        
-        </div>
-        </div>
-        
-        </div>
-
-        
       </div>
     );
   }
