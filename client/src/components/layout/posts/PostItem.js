@@ -63,6 +63,7 @@ import {deletePost,
                   type="button"
                   className="btn btn-light mr-1"
                 >
+                Confirm Request
              
                   <i
                     className={classnames('far fa-check-square', {
@@ -74,7 +75,7 @@ import {deletePost,
                   {post.likes.length}</span>
                 </button>
 
-
+                Delete Request
                 {post.user === auth.user.id ? (
                   <button
                     onClick={this.onDeleteClick.bind(this, post._id)}

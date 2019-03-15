@@ -41,7 +41,7 @@ import './shoots.css';
                   type="button"
                   className="btn btn-light"
                 >
-            Confirmed:
+            Confirmed
                   <i
                     className={classnames('far fa-check-square', {
                       'text-info': this.findUserLike(post.likes)
@@ -60,7 +60,7 @@ import './shoots.css';
                     type="button"
                     className="btn btn-danger"
                   >
-                  Delete Request:
+                  Delete
                     <i className="fas fa-times" />
                   </button>
                 ) : null}
