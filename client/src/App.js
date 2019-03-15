@@ -21,6 +21,7 @@ import Footer from './components/layout/Footer';
 
 import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
 import ThankYouPostForm from './components/layout/thankyou/ThankYouPostForm';
+import ThankYouPayment from './components/layout/thankyou/ThankYouPayment';
 
 import Register from './components/layout/auth/Register';
 import Login from './components/layout/auth/Login';
@@ -85,6 +86,7 @@ class App extends Component {
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
               <Route exact path="/thankyoupostform" component={ThankYouPostForm}/>
+              <Route exact path ="/thankyoupayment" component={ThankYouPayment}/>
 
               <div className="container">
               <Route exact path ="/register" component={Register}/>

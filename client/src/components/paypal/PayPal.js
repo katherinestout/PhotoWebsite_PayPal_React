@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PayPalButton from './PayPalButton';
+import {withRouter} from 'react-router-dom';
 
 
 
@@ -19,8 +20,10 @@ class PayPal extends Component {
   render() {
 
 
-  const onSuccess = (payment) =>
-  console.log('Successful payment!', payment);
+  const onSuccess = () =>
+  this.props.history.push("/thankyoupayment");
+  //console.log('Successful payment!', payment);
+ 
 
     
 
@@ -49,4 +52,4 @@ class PayPal extends Component {
   }
 }
 
-export default PayPal;
+export default withRouter(PayPal);
