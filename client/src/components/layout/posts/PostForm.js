@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import TextAreaFieldGroup from '../../common/TextAreaFieldGroup';
 import TextFieldGroup from '../../common/TextFieldGroup';
 import {addPost} from '../../../actions/postActions';
@@ -48,7 +49,8 @@ onSubmit(e){
 
   this.props.addPost(newPost);
   //clearing the text field
-  this.setState({text: ''});
+  this.setState({typeShoot: '', date: '', time: ''});
+  this.props.history.push("/thankyoupostform");
 } 
 
 onChange(e){
@@ -121,4 +123,4 @@ const mapStateToProps = state => ({
   auth: state.auth,
  // profile: state.profile
 });
-export default connect(mapStateToProps, {addPost})(PostForm);
+export default withRouter(connect(mapStateToProps, {addPost})(PostForm));

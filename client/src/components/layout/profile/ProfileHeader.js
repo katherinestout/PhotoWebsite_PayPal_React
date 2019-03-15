@@ -24,9 +24,10 @@ class ProfileHeader extends Component {
 
         <br></br>
         <br></br>
-          
-
-        <p>My Upcoming Shoots:</p>
+        <hr></hr>
+        <p><b>My Upcoming Shoots:</b></p>
+      <p>If confirmed, the check will be green.</p>
+      <hr></hr>
         
         </div>
       </div>

@@ -1,17 +1,12 @@
 .profile{
     margin-top: 5%;
+    margin-bottom: 10%;
    
 
-    height: 650px;
-}
-.profilecontent {
-
-text-align: center;
+    height: 100%;
 }
 
-.profileheader {
-        
-}
-.profilefeed {
 
+.profileheader{
+    text-align: center;
 }

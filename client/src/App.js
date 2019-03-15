@@ -18,7 +18,9 @@ import Inquiries from'./components/layout/Inquiries';
 import Portal from './components/layout/Portal';
 import NavBar from'./components/layout/NavBar';
 import Footer from './components/layout/Footer';
+
 import ThankYouEmail from './components/layout/thankyou/ThankYouEmail';
+import ThankYouPostForm from './components/layout/thankyou/ThankYouPostForm';
 
 import Register from './components/layout/auth/Register';
 import Login from './components/layout/auth/Login';
@@ -82,6 +84,8 @@ class App extends Component {
               <Route exact path ="/portal" component={Portal}/>
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
+              <Route exact path="/thankyoupostform" component={ThankYouPostForm}/>
+
               <div className="container">
               <Route exact path ="/register" component={Register}/>
               <Route exact path ="/login" component={Login}/>

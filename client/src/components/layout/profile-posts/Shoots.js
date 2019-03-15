@@ -25,14 +25,18 @@ class Shoots extends Component {
     if(posts === null || loading) {
       shootContent = <h4>Loading...</h4>
     } else  {
-      shootContent = <ProfileFeed posts = {posts} 
+      shootContent =
+      <div>  
+      <ProfileFeed posts = {posts} 
       profile = {profile}
     />
+    </div>
 
     }
 
     return (
       <div>
+          
         {shootContent}
       </div>
     );

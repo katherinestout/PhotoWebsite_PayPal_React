@@ -33,26 +33,26 @@ import './shoots.css';
 
     return (
       <div>
-        <div>
-        <div>
-          <div>
-          <p> {post.typeShoot}</p>
-            <p> {post.time}</p>
-            <p> {post.date}</p>
+      
+          <p> <b>Type of shoot:</b> {post.typeShoot}</p>
+            <p> <b>Time:</b>  {post.time}</p>
+            <p> <b>Date:</b> {post.date}</p>
                 <button
                   type="button"
                   className="btn btn-light"
                 >
-             
+            Confirmed:
                   <i
                     className={classnames('far fa-check-square', {
                       'text-info': this.findUserLike(post.likes)
                     })}
                   />
                   
-                  <span className="badge badge-light">
-                  {post.likes.length}</span>
+               
                 </button>
+
+                <br></br>
+                <br></br>
 
                 {post.user === auth.user.id ? (
                   <button
@@ -60,14 +60,13 @@ import './shoots.css';
                     type="button"
                     className="btn btn-danger"
                   >
+                  Delete Request:
                     <i className="fas fa-times" />
                   </button>
                 ) : null}
-       
+          <hr></hr>
           </div>
-        </div>
-      </div>
-      </div>
+        
     )
   }
 }
