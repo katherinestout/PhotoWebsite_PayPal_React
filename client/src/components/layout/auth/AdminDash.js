@@ -3,11 +3,11 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import './style/dashboard.css';
-import {getCurrentProfile, deleteAccount} from '../../../actions/profileActions';
+import {getCurrentProfile} from '../../../actions/profileActions';
 
 
 
-export class Dashboard extends Component {
+export class AdminDash extends Component {
 
   componentDidMount(){
     this.props.getCurrentProfile();
@@ -19,25 +19,14 @@ export class Dashboard extends Component {
 
   render() {
     const {user} = this.props.auth;
+    //console.log(this.props.auth);
     const{profile, loading} = this.props.profile;
-
-    const adminA = 'admin';
-    let adminB = `${this.props.auth.user.name}`;
-    console.log(adminB);
+    //console.log(this.props.profile.profile);
 
     let dashBoardContent;
 
     if(profile === null || loading){
       dashBoardContent = <h4>Loading...</h4>;
-
-     } else {
-        if(adminA === adminB){
-          dashBoardContent = (
-<div> Welcome Admin</div>
-          );
-        
-      
-
 
     } else {
       if(Object.keys(profile).length > 0){
@@ -45,33 +34,14 @@ export class Dashboard extends Component {
           <div>
           <h1>Welcome, {user.name} !</h1>
      
-          <h2>I am so excited you are interested in my business.</h2>
-          <p>Please schedule a day and time you are available.
-          </p>
-          <p>When your day and time has been confirmed, 
-              you are required to make a $50 downpayment to ensure your
-              day and time.
-          </p>
-          <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
-            
-          <div className="card">
-
-          <Link to ={`/profile/${profile.email}`}  className="btn btn-dark edit">Profile</Link>
-        
-                      <br></br>
-
-          <button onClick={this.onDeleteClick.bind(this)} 
-                        className="btn btn-light edit">
-                        Delete Account</button>
-                        </div>
+       
+     
           </div>
 
         );
 
 
-      }
-      
- else {
+      } else {
         dashBoardContent = (
           <div>
                  <h1>Welcome, {user.name}!</h1>
@@ -97,7 +67,6 @@ export class Dashboard extends Component {
       }
   
     }
-  }
 
    
     
@@ -113,7 +82,6 @@ export class Dashboard extends Component {
 Dashboard.propTypes = {
     auth: PropTypes.object.isRequired,
     getCurrentProfile: PropTypes.func.isRequired,
-    deleteAccount: PropTypes.func.isRequired,
     profile: PropTypes.object.isRequired
   }
   
@@ -122,4 +90,4 @@ Dashboard.propTypes = {
     profile: state.profile
   });
   
-  export default connect(mapStateToProps, {getCurrentProfile, deleteAccount})(Dashboard);
+  export default connect(mapStateToProps, {getCurrentProfile})(AdminDash);
