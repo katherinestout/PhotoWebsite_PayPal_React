@@ -10,11 +10,15 @@ class PostFeed extends Component {
     //map through posts passed into postcontent in Posts.js
   const {posts} = this.props;
 
-    return posts.map(
+ 
+
+    return  posts.map(
   post=> <PostItem key = {post._id} post = {post} 
  
  />
     );
+
+
   }
 }
 

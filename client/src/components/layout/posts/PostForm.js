@@ -68,9 +68,15 @@ onChange(e){
         <h4><b>
    Please enter your best availability, based on the calendar.
       </b></h4>
-      <br></br>
+
+<a href="https://calendar.google.com/calendar/embed?src=h1seqdml941hl46vrvfl612las%40group.calendar.google.com&ctz=America%2FNew_York">
+<button className="btn calendarlink">
+<b>View the calendar </b>
+</button>
+</a>
 
       </div>
+    
     
       <form onSubmit = {this.onSubmit} className="postformform">
 
@@ -104,7 +110,8 @@ onChange(e){
 
           </div>
           <button type="submit" className="btn btn-dark">
-          Submit
+          <b>Submit</b>
+        
           </button>
       </form>
       </div>

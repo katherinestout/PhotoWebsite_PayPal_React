@@ -61,30 +61,21 @@ import {deletePost,
                 <button
                   onClick={this.onLikeClick.bind(this, post._id)}
                   type="button"
-                  className="btn btn-light mr-1"
+                  className= {classnames("btn", {'btn-info': this.findUserLike(post.likes)})}
                 >
-                Confirm Request
-             
-                  <i
-                    className={classnames('far fa-check-square', {
-                      'text-info': this.findUserLike(post.likes)
-                    })}
-                  />
-                  
-                  <span className="badge badge-light">
-                  {post.likes.length}</span>
-                </button>
-
-                Delete Request
-                {post.user === auth.user.id ? (
+               <b>Confirm Request</b> 
+             </button>
+            
+          
+           
                   <button
                     onClick={this.onDeleteClick.bind(this, post._id)}
                     type="button"
                     className="btn btn-danger mr-1"
                   >
-                    <i className="fas fa-times" />
+                  <b>Delete Request</b>
                   </button>
-                ) : null}
+           
           </div>
         </div>
       </div>

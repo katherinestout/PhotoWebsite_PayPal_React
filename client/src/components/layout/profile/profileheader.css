@@ -1,7 +1,10 @@
-.editcontact {
+
+
+  .editcontact {
     font-family: 'Amatic SC', cursive;
-    background-color: black;
-    margin-bottom: 19%;
+    background-color: blueviolet;
+    color: whitesmoke;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- 
+    margin: 5%;
+   
   }

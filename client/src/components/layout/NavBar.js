@@ -33,9 +33,6 @@ class NavBar extends Component {
   
    console.log(this.props.auth.user.email);
 
-
-    
-
   
 //guest links
     const guestLinks = (
@@ -73,27 +70,18 @@ class NavBar extends Component {
     //auth links
     const authLinks = (
      
-
       <nav>
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
-
 
       <Link className="button" to={`/profile/${this.props.auth.user.email}`}  
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
          <b>{user.name}</b> 
           </Link>
       
-
           <Link className="button" to="/request"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
           <b> Schedule your Shoot</b>
-          </Link>
-
-
-          <Link className="button" to="/calendar" 
-              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-         <b> Calendar</b> 
           </Link>
 
           <Link className="button" to="/downpayment" 
@@ -116,14 +104,11 @@ class NavBar extends Component {
       <li className="nav-item">
 
 
-      <Link className="button" to={`/profile/${this.props.auth.user.email}`}  
-              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-         <b>{user.name}</b> 
-          </Link>
+    
       
         <Link className="button" to="/feed"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-          <b> Quotes Feed</b>
+          <b> Photoshoot requests</b>
           </Link>
 
           <Link className="button" to="/calendar" 
@@ -165,7 +150,6 @@ class NavBar extends Component {
     return (
       <div>
         
-     
        {renderLinks()}
         
       </div>

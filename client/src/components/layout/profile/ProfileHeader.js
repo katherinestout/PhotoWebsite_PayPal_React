@@ -17,13 +17,10 @@ class ProfileHeader extends Component {
         <h3> Email: {profile.user.email}</h3> 
         <h5> Phone:  <i>{profile.phone}</i></h5>
 
-        <br></br>
-        <Link to ="/editprofile" className="editcontact button"
+        <Link to ="/editprofile" className="editcontact btn"
         style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-        Edit Contact Info</Link>
-
-        <br></br>
-        <br></br>
+        <b>Edit Contact Info</b></Link>
+   
         <hr></hr>
         <p><b>My Upcoming Shoots:</b></p>
       <p>If confirmed, the check will be green.</p>
