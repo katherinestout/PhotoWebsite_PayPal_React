@@ -33,7 +33,7 @@ import {deletePost,
 
 
   render() {
-      const {post, auth} = this.props;
+      const {post} = this.props;
 
 
     return (
@@ -87,13 +87,9 @@ import {deletePost,
 PostItem.propTypes = {
     deletePost: PropTypes.func.isRequired,
     addLike: PropTypes.func.isRequired,
-    post: PropTypes.object.isRequired,
-    auth: PropTypes.object.isRequired,
+    post: PropTypes.object.isRequired
+
 }
 
-const mapStateToProps = state => ({
-    auth: state.auth,
-   
-});
 
-export default connect(mapStateToProps, {deletePost, addLike})(PostItem);
+export default connect({deletePost, addLike})(PostItem);
