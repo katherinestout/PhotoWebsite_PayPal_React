@@ -17,24 +17,21 @@ import {deletePost,
      }
 
     
-
      onLikeClick(id){
       this.props.addLike(id);
-
-  
    
   }
 
-
-  handleClick = (id) =>{
+  handleClick(id){
     let clickedArray = this.state.clickedArray;
     clickedArray.push(id);
     console.log(clickedArray);
   }
+     clickWrapper = (id) =>{
+      this.onLikeClick(id);
+      this.handleClick(id);
+     }
 
-
-    
-   
      //find out if user liked already
 
      findUserLike(likes){
@@ -76,7 +73,7 @@ import {deletePost,
 
             
                 <button
-                  onClick={this.onLikeClick.bind(this, post._id)} 
+                  onClick={this.clickWrapper.bind(this, post._id)} 
                   type="button"
                   className= {classnames("btn", {'btn-info': this.findUserLike(post.likes)})}
                 // handleClick = {this.handleClick.bind(this, post._id)}
