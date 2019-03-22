@@ -79,9 +79,9 @@ import {deletePost,
                   onClick={this.onLikeClick.bind(this, post._id)} 
                   type="button"
                   className= {classnames("btn", {'btn-info': this.findUserLike(post.likes)})}
-                 // handleClick = {this.handleClick}
+                // handleClick = {this.handleClick.bind(this, post._id)}
                 >
-               <b>Confirm Request</b> 
+               <b >Confirm Request</b> 
              </button>
             
                   <button
