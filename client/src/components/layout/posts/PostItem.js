@@ -8,15 +8,32 @@ import {deletePost,
 
 
  class PostItem extends Component {
+   state = {
+     clickedArray: []
+   }
      
      onDeleteClick(id){
          this.props.deletePost(id);
      }
 
-     onLikeClick(id){
-         this.props.addLike(id);
+    
 
-     }
+     onLikeClick(id){
+      this.props.addLike(id);
+
+  
+   
+  }
+
+
+  handleClick = (id) =>{
+    let clickedArray = this.state.clickedArray;
+    clickedArray.push(id);
+    console.log(clickedArray);
+  }
+
+
+    
    
      //find out if user liked already
 
@@ -31,10 +48,10 @@ import {deletePost,
   
      }
 
+ 
 
   render() {
       const {post, auth} = this.props;
-
 
     return (
       <div>
@@ -59,15 +76,14 @@ import {deletePost,
 
             
                 <button
-                  onClick={this.onLikeClick.bind(this, post._id)}
+                  onClick={this.onLikeClick.bind(this, post._id)} 
                   type="button"
                   className= {classnames("btn", {'btn-info': this.findUserLike(post.likes)})}
+                 // handleClick = {this.handleClick}
                 >
                <b>Confirm Request</b> 
              </button>
             
-          
-           
                   <button
                     onClick={this.onDeleteClick.bind(this, post._id)}
                     type="button"
@@ -92,8 +108,7 @@ PostItem.propTypes = {
 }
 
 const mapStateToProps = state => ({
-    auth: state.auth,
-   
+    auth: state.auth
 });
 
 export default connect(mapStateToProps, {deletePost, addLike})(PostItem);

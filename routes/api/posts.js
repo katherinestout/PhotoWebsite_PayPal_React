@@ -109,8 +109,6 @@ router.delete(
       Profile.findOne({ user: req.user.id }).then(profile => {
         Post.findById(req.params.id)
           .then(post => {
-            // Check for post owner
-          
             // Delete
             post.remove().then(() => res.json({ success: true }));
           })
