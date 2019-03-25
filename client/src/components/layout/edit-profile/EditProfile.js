@@ -25,7 +25,6 @@ export class EditProfile extends Component {
         this.props.getCurrentProfile();
     }
 
-//error might be here
     componentWillReceiveProps(nextProps){
         if(nextProps.errors) {
             this.setState({errors: nextProps.errors});

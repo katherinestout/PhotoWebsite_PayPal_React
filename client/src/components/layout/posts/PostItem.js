@@ -26,7 +26,11 @@ import {deletePost,
     let clickedArray = this.state.clickedArray;
     clickedArray.push(id);
     console.log(clickedArray);
+   
   }
+
+
+  //function that triggers the confirmed and adds to clickedArray
      clickWrapper = (id) =>{
       this.onLikeClick(id);
       this.handleClick(id);
@@ -49,6 +53,7 @@ import {deletePost,
 
   render() {
       const {post, auth} = this.props;
+
 
     return (
       <div>
@@ -76,7 +81,6 @@ import {deletePost,
                   onClick={this.clickWrapper.bind(this, post._id)} 
                   type="button"
                   className= {classnames("btn", {'btn-info': this.findUserLike(post.likes)})}
-                // handleClick = {this.handleClick.bind(this, post._id)}
                 >
                <b >Confirm Request</b> 
              </button>
