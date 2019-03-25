@@ -21,15 +21,34 @@ import {deletePost,
       this.props.addLike(id);
    
   }
-
-  handleClick(id){
+/*
+  handleClick(likes){
     let clickedArray = this.state.clickedArray;
-    clickedArray.push(id);
-    console.log(clickedArray);
+    
+    const auth = this.props;
+//if the likes are greater than one, push to clicked array
+    if(likes.filter(like => like.user === auth.user.id).length > 0){
+      clickedArray.push(auth.user.id) && console.log(clickedArray);
+    } else {
+      return false;
+    }
    
   }
 
+*/
+/*
+handleClick(likes, post){
+  let clickedArray = this.state.clickedArray;
+  const auth = this.props;
+  //if post.likes is greater than 0 add to clicked array
+  if(post.likes > 0){
+    clickedArray.push(auth.user.id) && console.log('clicked arr' + clickedArray);
 
+  } else {
+    console.log('dunno');
+  }
+}
+*/
   //function that triggers the confirmed and adds to clickedArray
      clickWrapper = (id) =>{
       this.onLikeClick(id);
@@ -40,9 +59,14 @@ import {deletePost,
 
      findUserLike(likes){
          const {auth} = this.props;
+         let clickedArray = this.state.clickedArray;
+        
 
          if(likes.filter(like => like.user === auth.user.id).length > 0){
             return true;
+            // && clickedArray.push(auth.user.id) && console.log(clickedArray);
+            
+
          } else {
              return false;
          }
