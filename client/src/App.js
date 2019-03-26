@@ -94,6 +94,8 @@ class App extends Component {
 
               <Route exact path ="/profiles" component ={ Profiles }/>
               <Route exact path ="/profile/:email" component ={ Profile }/>
+          
+
 
               </div>
       

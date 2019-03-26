@@ -103,17 +103,14 @@ class NavBar extends Component {
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
 
-
-    
-      
         <Link className="button" to="/feed"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
           <b> Photoshoot requests</b>
           </Link>
 
-          <Link className="button" to="/calendar" 
+          <Link className="button" to="/profiles" 
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-         <b> Calendar</b> 
+         <b> Contacts</b> 
           </Link>
 
           <a href="/home" onClick={this.onLogoutClick.bind(this)} className="button"
@@ -146,7 +143,6 @@ class NavBar extends Component {
    
     } 
 
-//   {isAuthenticated ? authLinks : guestLinks}
     return (
       <div>
         
@@ -162,7 +158,6 @@ class NavBar extends Component {
 NavBar.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  //getProfileByEmail: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired
   
 }
