@@ -1,0 +1,31 @@
+.mycalendarlink {
+    font-family: 'Amatic SC', cursive;
+    background-color: blueviolet;
+    color: whitesmoke;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 3%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+
+.postfeedtop{
+    text-align: center;
+}
+
+
+.unconfirmed{
+  
+
+}
+
+.confirmed{
+
+
+}

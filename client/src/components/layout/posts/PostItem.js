@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import {Link} from 'react-router-dom';
 import {deletePost, 
     addLike} from '../../../actions/postActions';
-
+import './postitem.css';
 
  class PostItem extends Component {
    state = {
@@ -58,17 +58,15 @@ handleClick(likes, post){
      //find out if user liked already
 
      findUserLike(likes){
+
          const {auth} = this.props;
          let clickedArray = this.state.clickedArray;
-        
-
+         
          if(likes.filter(like => like.user === auth.user.id).length > 0){
             return true;
             // && clickedArray.push(auth.user.id) && console.log(clickedArray);
-            
-
          } else {
-             return false;
+          clickedArray.push(auth.user.id) && console.log(clickedArray);
          }
   
      }
@@ -80,8 +78,8 @@ handleClick(likes, post){
 
 
     return (
-      <div>
-        <div className="card">
+     
+        <div className="postitem">
         <div>
           <div>
             <br />
@@ -94,7 +92,8 @@ handleClick(likes, post){
             </p>
 
           </div>
-          <div className="col-md-10">
+          <div>
+            <p>{post.name}</p>
             <p> {post.typeShoot}</p>
             <p> {post.time}</p>
             <p> {post.date}</p>
@@ -113,6 +112,7 @@ handleClick(likes, post){
                     onClick={this.onDeleteClick.bind(this, post._id)}
                     type="button"
                     className="btn btn-danger mr-1"
+                    style ={{margin: '5%'}}
                   >
                   <b>Delete Request</b>
                   </button>
@@ -120,7 +120,7 @@ handleClick(likes, post){
           </div>
         </div>
       </div>
-      </div>
+    
     )
   }
 }
