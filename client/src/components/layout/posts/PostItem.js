@@ -8,9 +8,9 @@ import {deletePost,
 import './postitem.css';
 
  class PostItem extends Component {
-   state = {
-     clickedArray: []
-   }
+   //state = {
+     //clickedArray: []
+   //}
      
      onDeleteClick(id){
          this.props.deletePost(id);
@@ -52,7 +52,7 @@ handleClick(likes, post){
   //function that triggers the confirmed and adds to clickedArray
      clickWrapper = (id) =>{
       this.onLikeClick(id);
-      this.handleClick(id);
+      //this.handleClick(id);
      }
 
      //find out if user liked already
@@ -60,17 +60,31 @@ handleClick(likes, post){
      findUserLike(likes){
 
          const {auth} = this.props;
-         let clickedArray = this.state.clickedArray;
-         
+         //let clickedArray = this.state.clickedArray;
+
          if(likes.filter(like => like.user === auth.user.id).length > 0){
             return true;
             // && clickedArray.push(auth.user.id) && console.log(clickedArray);
          } else {
-          clickedArray.push(auth.user.id) && console.log(clickedArray);
+          //clickedArray.push(auth.user.id) && console.log('clicked array' + clickedArray);
+          return false;
          }
   
      }
 
+     /*
+     confirmedUnconfirmed(likes){
+      let clickedArray = this.state.clickedArray;
+      //if a post has a like or more than one like, add it to confirmed, console log
+      //else, add it to unconfirmed
+      if(Posts.filter){
+        unconfirmedArray.push(auth.user.id) && console.log('clicked array' + unconfirmedArray);
+      } else {
+        clickedArray.push(auth.user.id) && console.log('clicked array' + clickedArray);
+      }
+       
+     }
+*/
  
 
   render() {

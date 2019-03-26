@@ -1,27 +1,46 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import PostItem from './PostItem';
-//import ConfirmedUnconfirmed from './ConfirmedUnconfirmed';
 import "./postfeed.css";
 
-
 class PostFeed extends Component {
-/*  state = {
-    clickedArray: []
-  }*/
-
   render() {
     //destructuring taking the posts out of props
     //map through posts passed into postcontent in Posts.js
   const {posts} = this.props;
-  //const {clickedArray} = this.state.clickedArray;
-  //console.log(this.state.clickedArray);
 
-    const postPost = ( posts.map(
-      post=> <PostItem key = {post._id} post = {post} 
-     />));
+//filtering through
+   function confirmed(post){
+     if(post.likes.length > 0){
+       return posts;
+     }
+     else{
+       console.log('no confirmed');
+     }
+   }
 
-   // const clickedClicked = (clickedArray);
+   const confirmedPosts = posts.filter(confirmed);
+
+   const confirmed = (confirmedPosts.map(
+     post=> <PostItem key = {post._id} post = {post} likes={post.likes}/>
+   ));
+   
+   
+//filtering through
+   function unConfirmed(post){
+    if(post.likes.length < 0){
+      return posts;
+    }
+    else {
+      console.log('idk');
+    }
+  }
+
+  const unConfirmedPosts = posts.filter(unConfirmed);
+
+  const unConfirmed = (unConfirmedPosts.map(
+    post=> <PostItem key = {post._id} post = {post} likes={post.likes}/>
+  ));
 
     return (
       <div className="postfeed">
@@ -38,11 +57,13 @@ class PostFeed extends Component {
 
         <div className="unconfirmed">
         <p><b>Unconfirmed</b></p>
-        {postPost}
+        {unConfirmed}
         </div>
 
         <div className="confirmed">
         <p><b>Confirmed</b></p>
+        {confirmed}
+       
         </div>
       </div>
     )
