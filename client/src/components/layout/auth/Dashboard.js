@@ -69,12 +69,14 @@ export class Dashboard extends Component {
             
           <div className="card">
 
-          <Link to ={`/profile/${profile.email}`}  className="btn btn-dark edit">Profile</Link>
+          <Link to ={`/profile/${profile.email}`}  className="btn edit button"
+          style={{ textDecoration: 'none', color: 'black'}}>Profile</Link>
         
                       <br></br>
 
           <button onClick={this.onDeleteClick.bind(this)} 
-                        className="btn btn-light edit">
+                        className="btn delete button"
+                        style={{ textDecoration: 'none', color: 'black'}}>
                         Delete Account</button>
                         </div>
           </div>
@@ -101,8 +103,9 @@ export class Dashboard extends Component {
 
             <p> Please set up your Contact Information.</p>
 
-            <Link to ="/createprofile" className="btn btn-dark create">
-                Contact Info
+            <Link to ="/createprofile" className="btn create button"
+             style={{ textDecoration: 'none', color: 'black'}}>
+                Create Profile
                 </Link>
                 </div>
           </div>

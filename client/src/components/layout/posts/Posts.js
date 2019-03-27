@@ -29,7 +29,7 @@ class Posts extends Component {
         <p>Check your schedule:
         <a href="https://calendar.google.com/calendar/embed?src=h1seqdml941hl46vrvfl612las%40group.calendar.google.com&ctz=America%2FNew_York">
         <button className="btn mycalendarlink">
-        <b>View the calendar: </b>
+        <b>View the calendar </b>
         </button>
         </a> </p>
         </div>
