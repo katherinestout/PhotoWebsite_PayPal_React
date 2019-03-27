@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-//import {Link} from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
 import {getProfileByEmail} from '../../../actions/profileActions';
 import {getPosts} from '../../../actions/postActions';
@@ -35,8 +34,7 @@ class Profile extends Component {
                 <div className="profileheader">  
                 <ProfileHeader profile = {profile}/></div>
                   <div className="profilefeed">
-                  
-                  <ProfileFeed posts = {posts}/></div>
+                <ProfileFeed posts = {posts}/></div>
                 </div>
           )
       }

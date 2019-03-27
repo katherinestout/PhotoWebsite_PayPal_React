@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import PostFeed from './PostFeed';
+//import PostFeed from './PostFeed';
 import {getPosts} from '../../../actions/postActions';
 import './posts.css';
+import Unconfirmed from './Unconfirmed';
+import Confirmed from './Confirmed';
 
 class Posts extends Component {
 
@@ -21,8 +23,17 @@ class Posts extends Component {
     if(posts === null || loading) {
       postContent = <h4>Loading...</h4>
     } else {
-      postContent = <PostFeed posts = {posts} 
-    />
+      postContent =
+      <div>
+        <h2><b>Unconfirmed:</b></h2>
+<Unconfirmed posts = {posts}/>
+
+      <h2><b>Confirmed:</b></h2>
+<Confirmed posts = {posts}/>
+        
+      </div>
+      
+   
 
     }
 

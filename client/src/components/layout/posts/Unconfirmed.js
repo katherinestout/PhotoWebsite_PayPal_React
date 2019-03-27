@@ -3,18 +3,12 @@ import PropTypes from 'prop-types';
 import PostItem from './PostItem';
 
 
-class PostFeed extends Component {
+class Unconfirmed extends Component {
 
   render() {
     //destructuring taking the posts out of props
     //map through posts passed into postcontent in Posts.js
   const {posts} = this.props;
-
-  function filterthis(post){
-    if(post.likes.length > 0){
-      return posts;
-    }
-  }
 
   function filterthat(post){
     if(post.likes.length === 0){
@@ -22,7 +16,6 @@ class PostFeed extends Component {
     }
   }
 
-  const thisPosts = posts.filter(filterthis);
   const thatPosts = posts.filter(filterthat);
 
     return thatPosts.map(
@@ -35,8 +28,8 @@ class PostFeed extends Component {
   }
 }
 
-PostFeed.propTypes = {
+Unconfirmed.propTypes = {
     posts: PropTypes.array.isRequired,
 }
 
-export default PostFeed;
+export default Unconfirmed;

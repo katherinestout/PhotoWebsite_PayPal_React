@@ -33,7 +33,7 @@ class Profiles extends Component {
       <div className = "container">
         
           <div>
-          <h1>All of your contacts </h1>
+          <h1><b>All of your contacts:</b> </h1>
           {profileItems}
 
           </div>
