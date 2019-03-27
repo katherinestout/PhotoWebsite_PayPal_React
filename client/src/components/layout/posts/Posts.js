@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-//import PostFeed from './PostFeed';
 import {getPosts} from '../../../actions/postActions';
 import './posts.css';
 import Unconfirmed from './Unconfirmed';
@@ -25,16 +24,42 @@ class Posts extends Component {
     } else {
       postContent =
       <div>
-        <h2><b>Unconfirmed:</b></h2>
-<Unconfirmed posts = {posts}/>
+        <div className="posts-top">
+         <h2><b>Requests</b></h2>
+        <p>Check your schedule:
+        <a href="https://calendar.google.com/calendar/embed?src=h1seqdml941hl46vrvfl612las%40group.calendar.google.com&ctz=America%2FNew_York">
+        <button className="btn mycalendarlink">
+        <b>View the calendar: </b>
+        </button>
+        </a> </p>
+        </div>
+        <div className="container">
+        <div className="row">
+        <div className="col">
 
-      <h2><b>Confirmed:</b></h2>
-<Confirmed posts = {posts}/>
+        <h2 className="center"><b>Unconfirmed:</b></h2>
+        </div>
+        <div className="col">
+
+        <h2 className="center"><b>Confirmed:</b></h2>
+        </div>
+        </div>
+
+        <div className="row">
+
+        <div className="col unconfirmedposts">
+
+        <Unconfirmed posts = {posts}/>
+        </div>
+
+        <div className="col confirmedposts">
+
+        <Confirmed posts = {posts}/>
         
+        </div>
+        </div>
+        </div>
       </div>
-      
-   
-
     }
 
     return (

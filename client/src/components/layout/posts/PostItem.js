@@ -38,7 +38,8 @@ import './postitem.css';
         <div className="postitem">
         <div>
           <div>
-            <br />
+       
+            <p><b>{post.name}</b></p>
             <p>
 
             <Link to={`/profile/${post.email}`}style={{textDecoration: 'none', color:'black'}}  >
@@ -49,7 +50,7 @@ import './postitem.css';
 
           </div>
           <div>
-            <p>{post.name}</p>
+      
             <p> {post.typeShoot}</p>
             <p> {post.time}</p>
             <p> {post.date}</p>
