@@ -34,8 +34,10 @@ export class Dashboard extends Component {
         if(adminA === adminB){
           dashBoardContent = (
             <div>
-<div> <h2>Welcome Admin!</h2></div>
+<div> <h2><b>Welcome Admin!</b></h2></div>
+<br></br>
 <p>You can either see photoshoot requests, or see all contacts.</p>
+<br></br>
 
   <Link className="button req" to="/feed"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
