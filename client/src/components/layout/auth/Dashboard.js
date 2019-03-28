@@ -37,13 +37,13 @@ export class Dashboard extends Component {
 <div> <h2>Welcome Admin!</h2></div>
 <p>You can either see photoshoot requests, or see all contacts.</p>
 
-  <Link className="button" to="/feed"
+  <Link className="button req" to="/feed"
               style={{ textDecoration: 'none', color: 'whitesmoke'}}>
           <b> Requests</b>
           </Link>
 
-  <Link className="button" to="/profiles"
-              style={{ textDecoration: 'none', color: 'whitesmoke', margin: '5%'}}>
+  <Link className="button contacts" to="/profiles"
+              style={{ textDecoration: 'none', color: 'whitesmoke', margin: '1%'}}>
           <b> Contacts</b>
           </Link>
 </div>

@@ -15,10 +15,22 @@
     background-color: aquamarine;
 }
 
+.contacts {
+    width: 40%;
+    background-color: aquamarine;
+}
+
 .delete {
     background-color: salmon;
     width: 40%;
     margin-left: 30%;
+
+}
+
+.req {
+    background-color: salmon;
+    width: 40%;
+
 
 }
 
