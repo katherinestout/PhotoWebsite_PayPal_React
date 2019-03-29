@@ -7,13 +7,10 @@ import {withRouter} from 'react-router-dom';
 require('dotenv').config(); 
 
 const CLIENT = {
-  sandbox: process.env.REACT_APP_client_id,
-  production: 'xxxXXX',
+  sandbox: process.env.REACT_APP_client_id
 };
 
-const ENV = process.env.NODE_ENV === 'production'
-  ? 'production'
-  : 'sandbox';
+const ENV = process.env.NODE_ENV = 'sandbox';
 
 
 class PayPal extends Component {

@@ -104,13 +104,9 @@ Login.propTypes = {
 };
 
 
-//mapStateToProps is a filter used to select which things from the store are required by the component
-//the selected things become the component properties
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
 });
 
-//The connect from Redux connects the mapStateToProps and the store
-//without connect, the mapStateToProps doesn't know where to "go"
 export default connect(mapStateToProps, { loginUser })(Login);
