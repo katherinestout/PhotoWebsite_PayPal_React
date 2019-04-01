@@ -4,12 +4,11 @@
 
 ## About
 
-<img width="461" alt="jasmeine jay" src="https://user-images.githubusercontent.com/39039142/55351934-a234c500-548d-11e9-8097-871c3c699242.png">
+Inquiries through filling out the form can be made to the admin of the website. Nodemailer is used to send the information from the photography website to the admin's email, this can easily be changed to an actual email. 
 
+<img width="461" alt="jasmeine jay" src="https://user-images.githubusercontent.com/39039142/55351934-a234c500-548d-11e9-8097-871c3c699242.png">
 <img width="673" alt="nodemailer" src="https://user-images.githubusercontent.com/39039142/55351930-a06b0180-548d-11e9-91db-c38ff7b5a3a8.png">
 <img width="488" alt="thank you" src="https://user-images.githubusercontent.com/39039142/55351940-a365f200-548d-11e9-9479-3893770ff8a9.png">
-
-Inquiries through filling out the form can be made to the admin of the website. Nodemailer is used to send the information from the photography website to the admin's email, this can easily be changed to an actual email. 
 
 The login for the example Ethereal Email: 
 
