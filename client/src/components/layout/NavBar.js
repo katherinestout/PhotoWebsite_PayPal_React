@@ -84,10 +84,6 @@ class NavBar extends Component {
           <b> Schedule your Shoot</b>
           </Link>
 
-          <Link className="button" to="/downpayment" 
-              style={{ textDecoration: 'none', color: 'whitesmoke'}}>
-         <b>Downpayment</b> 
-          </Link>
 
           <a href="/home" onClick={this.onLogoutClick.bind(this)} className="button"
           style={{ textDecoration: 'none', color: 'whitesmoke'}}>
