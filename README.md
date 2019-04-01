@@ -6,6 +6,8 @@
 
 ## Guest Users
 
+Guest users can see the photopackages and prices, the about me page, fill out an inquiry form, and guests can create an account.
+
 Inquiries through filling out the form can be made to the admin of the website. Nodemailer is used to send the information from the photography website to the admin's email, this can easily be changed to an actual email. 
 
 <img width="461" alt="jasmeine jay" src="https://user-images.githubusercontent.com/39039142/55351934-a234c500-548d-11e9-8097-871c3c699242.png">
