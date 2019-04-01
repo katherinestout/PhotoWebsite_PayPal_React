@@ -7,10 +7,8 @@
 <img width="1181" alt="Screen Shot 2019-03-29 at 12 01 52 PM" src="https://user-images.githubusercontent.com/39039142/55350673-a01d3700-548a-11e9-86cc-e940063af516.png">
 
 <img width="1221" alt="Screen Shot 2019-03-29 at 12 02 06 PM" src="https://user-images.githubusercontent.com/39039142/55350674-a01d3700-548a-11e9-9db7-26c06593cca5.png">
-
-<img width="619" alt="Screen Shot 2019-03-29 at 12 02 26 PM" src="https://user-images.githubusercontent.com/39039142/55350675-a01d3700-548a-11e9-877e-fec99b7c3dc7.png">
-
-<img width="703" alt="Screen Shot 2019-03-29 at 12 02 37 PM" src="https://user-images.githubusercontent.com/39039142/55350676-a01d3700-548a-11e9-801d-b404e0ffc228.png">
+ 
+Users can either sign up or login when they click on the customer portal tab.
 
 
 <img width="709" alt="Screen Shot 2019-03-29 at 12 02 59 PM" src="https://user-images.githubusercontent.com/39039142/55350745-cd69e500-548a-11e9-9d89-5e5e690a118a.png">
