@@ -61,12 +61,10 @@ export class Dashboard extends Component {
           <h1>Welcome, {user.name} !</h1>
      
           <h2>I am so excited you are interested in my business.</h2>
-          <p>Please schedule a day and time you are available.
+          <p>Please schedule a day and time you are available!
           </p>
-          <p>When your day and time has been confirmed, 
-              you are required to make a $50 downpayment to ensure your
-              day and time.
-          </p>
+          <p>I will get back to you shortly.</p>
+       
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
             
           <div className="card">
@@ -96,10 +94,7 @@ export class Dashboard extends Component {
           <h2>I am so excited you are interested in my business.</h2>
           <p>Please schedule a day and time you are available.
           </p>
-          <p>When your day and time has been confirmed, 
-              you are required to make a $50 downpayment to ensure your
-              day and time.
-          </p>
+       
           <p> <i className="fas fa-camera-retro"></i><i>Jane Newport</i></p>
           <div className='card'>
 

@@ -7,7 +7,7 @@ import {withRouter} from 'react-router-dom';
 require('dotenv').config(); 
 
 const CLIENT = {
-  sandbox: process.env.REACT_APP_client_id,
+  live: process.env.REACT_APP_client_id,
   production: 'xxxXXX',
 };
 
