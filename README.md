@@ -2,6 +2,8 @@
 
 <img width="797" alt="photography" src="https://user-images.githubusercontent.com/39039142/55350615-81b73b80-548a-11e9-87d8-b1af2f56555d.png">
 
+## About
+
 <img width="1181" alt="Screen Shot 2019-03-29 at 12 01 52 PM" src="https://user-images.githubusercontent.com/39039142/55350673-a01d3700-548a-11e9-86cc-e940063af516.png">
 
 <img width="1221" alt="Screen Shot 2019-03-29 at 12 02 06 PM" src="https://user-images.githubusercontent.com/39039142/55350674-a01d3700-548a-11e9-9db7-26c06593cca5.png">
