@@ -30,7 +30,8 @@ https://ethereal.email
 
 
 ## New or Old User
-<img width="1221" alt="Screen Shot 2019-03-29 at 12 02 06 PM" src="https://user-images.githubusercontent.com/39039142/55350674-a01d3700-548a-11e9-9db7-26c06593cca5.png">
+<img width="770" alt="phtoportal" src="https://user-images.githubusercontent.com/39039142/55425988-b8a45480-5551-11e9-97ef-f0fe55e39e2e.png">
+
  
 Users can either sign up or login when they click on the customer portal tab.
 
