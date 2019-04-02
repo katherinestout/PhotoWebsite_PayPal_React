@@ -1,8 +1,16 @@
-# Jane Newport (Sample) Photography Website
+# Jane Newport Photography Website
 
 <img width="797" alt="photography" src="https://user-images.githubusercontent.com/39039142/55350615-81b73b80-548a-11e9-87d8-b1af2f56555d.png">
 
 ## About
+
+A photography website designed for the self employed photographer. The website was designed so that clients would have an easy way to schedule upcoming photoshoots, as well as to make communication between photographer and client clearer and faster.
+
+Without making an account, guest users can view photo packages, view the about me page, and contact the photographer on the inquiry page. 
+
+The admin account is designed for the photographer. In the admin account, the admin user can confirm or delete photoshoot requests. Also in the admin account, the admin user can view all users contact information. This makes it very easy to contact clients, and to facilitate photoshoot requests. There is only one admin account.
+
+The user account is designed for the clients. In a user account, a user puts in their contact information. Their contact information is only available to themself and to the admin user. In a user account the user can also schedule a photoshoot request. On their profile page they can view upcoming photoshoots, as well as delete their requests. Users can see when their photoshoot is confirmed when the confirmed button becomes green. 
 
 ## Guest Users
 
