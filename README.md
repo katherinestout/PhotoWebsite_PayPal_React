@@ -4,13 +4,21 @@
 
 ## About
 
-A photography website designed for the self employed photographer. The website was designed so that clients would have an easy way to schedule upcoming photoshoots, as well as to make communication between photographer and client clearer and faster.
+This is a MERN stack photography website that uses a RESTFUL API, it is designed for the self employed photographer. The website was designed so that clients would have an easy way to schedule upcoming photoshoots, as well as to make communication between photographer and both client clearer and faster.
 
 Without making an account, guest users can view photo packages, view the about me page, and contact the photographer on the inquiry page. 
 
 The admin account is designed for the photographer. In the admin account, the admin user can confirm or delete photoshoot requests. Also in the admin account, the admin user can view all users contact information. This makes it very easy to contact clients, and to facilitate photoshoot requests. There is only one admin account.
 
 The user account is designed for the clients. In a user account, a user puts in their contact information. Their contact information is only available to themself and to the admin user. In a user account the user can also schedule a photoshoot request. On their profile page they can view upcoming photoshoots, as well as delete their requests. Users can see when their photoshoot is confirmed when the confirmed button becomes green. 
+
+### Future Updates:
+
+In the future it would be ideal to implement a paypal downpayment button, since downpayments are essential to a freelance photographer.
+
+## Dependencies
+
+bcryptjs, body-parser, concurrently, express, jsonwebtoken, mongoose, nodemailer, passport, passport-jwt, paypal-rest-sdk, validator, nodemon, axios, classnames, dotenv, jwt-decode, react, react-async-script-loader, react-dom, react-redux, react-router-dom, react-scripts, redux, and redux-thunk.
 
 ## Guest Users
 
