@@ -4,7 +4,7 @@
 
 ## About
 
-This is a MERN stack photography website that uses a RESTFUL API, and CRUD methods. It is designed for the self employed photographer. The website was designed so that clients would have an easy way to schedule upcoming photoshoots, as well as to make communication between photographer and both client clearer and faster.
+This is a MERN stack photography website that uses a RESTFUL API, and CRUD methods. It is built with MongoDB, Node.js, React.js, Redux, and Express. It is designed for the self employed photographer. The website was designed so that clients would have an easy way to schedule upcoming photoshoots, as well as to make communication between photographer and both client clearer and faster.
 
 Without making an account, guest users can view photo packages, view the about me page, and contact the photographer on the inquiry page. 
 
@@ -76,6 +76,8 @@ The admin can confirm photoshoot requests by clicking the confirm button. The un
 <img width="806" alt="contacts" src="https://user-images.githubusercontent.com/39039142/55353217-c219b800-5490-11e9-810b-81ff5ccd72ef.png">
 <img width="1169" alt="confirmedunconfirmed" src="https://user-images.githubusercontent.com/39039142/55353219-c34ae500-5490-11e9-8242-ef2b2ac92628.png">
 
+### Contributors
+Katherine Stout
 
 
 
