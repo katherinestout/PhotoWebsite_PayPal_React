@@ -26,7 +26,7 @@ import ThankYouPayment from './components/layout/thankyou/ThankYouPayment';
 import Register from './components/layout/auth/Register';
 import Login from './components/layout/auth/Login';
 import Calendar from './components/layout/auth/Calendar';
-import Downpayment from './components/layout/auth/Downpayment';
+//import Downpayment from './components/layout/auth/Downpayment';
 
 import PrivateRoute from './components/common/PrivateRoute';
 
@@ -83,12 +83,10 @@ class App extends Component {
               <Route exact path = "/inquiries" component={Inquiries}/>
               <Route exact path = "/packages" component={Packages}/>
               <Route exact path ="/calendar" component={Calendar}/>
-              <Route exact path = "/downpayment" component={Downpayment}/>
               <Route exact path ="/portal" component={Portal}/>
 
               <Route exact path ="/thankyouemail" component={ThankYouEmail}/>
               <Route exact path="/thankyoupostform" component={ThankYouPostForm}/>
-              <Route exact path ="/thankyoupayment" component={ThankYouPayment}/>
 
               <div className="container">
               <Route exact path ="/register" component={Register}/>
